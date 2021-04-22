@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <title>Registe</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!-- Layout -->
+    <div class="container right-panel-active">
+        <!--Registe frame -->
+        <div class="container_from container--signup">
+            <form action="#" class="from" id="from1">
+                <h2 class="from_title">Create an account</h2>
+                <input type="text" placeholder="User" class="input">
+                <input type="email" placeholder="Email" class="input">
+                <input type="password" placeholder="Password" class="input">
+                <button class="btn">Registe</button>
+            </form>
+        </div>
+
+        <!--Log in frame-->
+        <div class="container_from container--signin">
+            <form action="#" class="from" id="from2">
+                <h2 class="from_title">Welcome!</h2>
+                <input type="email" placeholder="Email" class="input">
+                <input type="password" placeholder="Password" class="input">
+                <a href="#" class="link">Forget the password?</a>
+                <button class="btn">Log in</button>
+            </form>
+        </div>
+
+        <div class="container_overlay">
+            <div class="overlay">
+                <div class="overlay_panel overlay--left">
+                    <button class="btn" id="signin">Already have an account, log in here</button>
+                </div>
+
+                <div class="overlay_panel overlay--right">
+                    <button class="btn" id="signup">Havn't got an account, registe here</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
