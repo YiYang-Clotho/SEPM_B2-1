@@ -7,6 +7,7 @@ public class User {
     private String email = null;
     private String name = null;
     private Role role = null;
+    private String phone = null;
 
     public User(){
 
@@ -40,6 +41,14 @@ public class User {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String num) {
+        this.phone = phone;
     }
 
     public Role getRole() {

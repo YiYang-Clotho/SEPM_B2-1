@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:fragment="form">
+    <input th:value="${cinema.id}" type="hidden" name="id" >
+    <div class="form-group">
+        <label for="location">location</label>
+        <input th:value="${cinema.location}" type="text" class="form-control" id="location"  name="location" aria-describedby="locationHelp" placeholder="Enter cinema location" required>
+        <small id="locationHelp" class="form-text text-muted">Please input the cinema's location.</small>
+    </div>
+    <div class="form-group">
+        <label for="tel">Tel</label>
+        <input th:value="${cinema.tel}" type="text" class="form-control" id="tel"  name="tel" aria-describedby="telHelp" placeholder="Enter cinema tel" required onchange="pass1()">
+        <small id="telHelp" class="form-text text-muted">Please input the cinema's tel.</small>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</body>
