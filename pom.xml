@@ -123,6 +123,7 @@
                 <configuration>
                     <url>${db.url}</url>
                     <user>sa</user>
+                    <outOfOrder>true</outOfOrder>
                 </configuration>
                 <dependencies>
                     <dependency>

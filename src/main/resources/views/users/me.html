@@ -20,10 +20,16 @@
 <main role="main" class="container ">
     <h1>Restricted Page</h1>
     <h2>Current User information</h2>
+    <p><b>id:</b> <span th:text="${user.id}"></span></p>
     <p><b>Name:</b> <span th:text="${user.name}"></span></p>
     <p><b>Email:</b> <span th:text="${user.email}"></span></p>
+    <p><b>Phone:</b> <span th:text="${user.phone}"></span></p>
     <p><b>Role:</b> <span th:text="${user.role}"></span></p>
+    <p><h2><b><a class="btn btn-success" th:href="@{/users/me/edit}" role="button">Edit profile</a></b></h2></p>
+
 </main>
+
+
 <!-- End THIS page content -->
 
 

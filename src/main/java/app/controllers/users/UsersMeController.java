@@ -1,5 +1,6 @@
 package app.controllers.users;
 
+import app.dao.UserDao;
 import app.utils.Views;
 import io.javalin.http.Context;
 import io.javalin.http.Handler;
@@ -11,6 +12,7 @@ public class UsersMeController implements Handler {
     @Override
     public void handle(@NotNull Context ctx) throws Exception {
         Map<String, Object> model = Views.baseModel(ctx);
+//        model.put("user", UserDao.INSTANCE.getByEmail("admin@test.com"));
         ctx.render("/views/users/me.html", model);
     }
 }

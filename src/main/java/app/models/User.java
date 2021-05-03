@@ -7,6 +7,9 @@ public class User {
     private String email = null;
     private String name = null;
     private Role role = null;
+    private String password = null;
+    private String phone = null;
+    private int age = 0;
 
     public User(){
 
@@ -16,6 +19,14 @@ public class User {
         this.email = email;
         this.name = name;
         this.role = role;
+    }
+
+    public User(String email, String name, int age, String password, String phone) {
+        this.email = email;
+        this.name = name;
+        this.age = age;
+        this.password = password;
+        this.phone = phone;
     }
 
     public Long getId() {
@@ -42,6 +53,14 @@ public class User {
         this.name = name;
     }
 
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String num) {
+        this.phone = phone;
+    }
+
     public Role getRole() {
         return role;
     }
@@ -50,13 +69,35 @@ public class User {
         this.role = role;
     }
 
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
                 ", email='" + email + '\'' +
                 ", name='" + name + '\'' +
-                ", role=" + role +
+                ", age='" + age + '\'' +
+                ", role=" + role + '\'' +
+                ", password=" + password + '\'' +
+                ", phone=" + phone + '\'' +
                 '}';
     }
 }
