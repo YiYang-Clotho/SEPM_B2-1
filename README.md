@@ -9,7 +9,7 @@
   * 1, make sure you have Jdk 11, otherwise please download it
   * 2, run maven command: mvn flyway:migrate
   * 3, run APP (in utils folder)
-  * 4, go to browser: http://localhost:7000/
+  * 4, go to browser: http://localhost:3000/
 
 ### Users
 * Admin 
