@@ -10,11 +10,13 @@ import java.sql.SQLException;
 
 public class UserDao {
 
-    private static final String SELECT_PWD_BY_EMAIL = "SELECT password FROM users WHERE email = ?" ;
-    private static final String SELECT_BY_EMAIL = "SELECT email, name, role, id FROM users WHERE email = ?" ;
+    private static final String SELECT_PWD_BY_EMAIL = "SELECT password FROM users WHERE email = ?";
+    private static final String SELECT_BY_EMAIL = "SELECT email, name, role, id, phone FROM users WHERE email = ?";
     public static UserDao INSTANCE = new UserDao();
+    private static String UPDATE = "UPDATE users SET email = ?, name = ?,  phone = ? WHERE id=?";
 
-    private UserDao(){}
+    private UserDao() {
+    }
 
     public String getUserPasswordHash(String email) throws SQLException {
         Connection connection = DBUtils.getConnection();
@@ -39,9 +41,22 @@ public class UserDao {
             user.setName(rs.getString(2));
             user.setRole(Role.valueOf(rs.getString(3)));
             user.setId(rs.getLong(4));
+            user.setPhone(rs.getString(5));
             return user;
         }
         connection.close();
         throw new SQLException("No User with email = " + email);
     }
+
+    public int update(User user) throws SQLException {
+        Connection connection = DBUtils.getConnection();
+        PreparedStatement stm = connection.prepareStatement(UPDATE);
+        stm.setString(1, user.getEmail());
+        stm.setString(2, user.getName());
+        stm.setString(3, user.getPhone());
+        return stm.executeUpdate();
+    }
+
 }
+
+
