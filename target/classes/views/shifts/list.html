@@ -26,13 +26,13 @@
     <div class="card-columns">
                 <div th:each="shift : ${shifts}" class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Date:<span th:text="${shift.title}">Card title></span></h4>
-                        <h4 class="card-title">Day:<span th:text="${shift.staff_name}">Card title></span></h4>
-                        <h4 class="card-title">Start_time:<span th:text="${shift.detail}">Card title></span></h4>
-                        <h4 class="card-title">End_time:<span th:text="${shift.status}">Card title></span></h4>
-                        <h4 class="card-title">Staff:<span th:text="${shift.created_time}">Card title></span></h4>
-                        <h4 class="card-title">Position:<span th:text="${shift.finish_time}">Card title></span></h4>
-                        <h4 class="card-title">Position:<span th:text="${shift.due_time}">Card title></span></h4>
+                        <h4 class="card-title">Shift title:<span th:text="${shift.title}">Card title></span></h4>
+                        <h4 class="card-title">Executor name:<span th:text="${shift.staff_name}">Card title></span></h4>
+                        <h4 class="card-title">Shift detail:<span th:text="${shift.detail}">Card title></span></h4>
+                        <h4 class="card-title">Shift status:<span th:text="${shift.status}">Card title></span></h4>
+                        <h4 class="card-title">Created time:<span th:text="${shift.created_time}">Card title></span></h4>
+                        <h4 class="card-title">Finish time:<span th:text="${shift.finish_time}">Card title></span></h4>
+                        <h4 class="card-title">Due time:<span th:text="${shift.due_time}">Card title></span></h4>
 
                         <!--                <h4 class="card-title">Theater number:<span th:text="${s.theater_id}"></span></h4>-->
 

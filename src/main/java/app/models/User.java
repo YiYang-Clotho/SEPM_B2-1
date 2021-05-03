@@ -7,6 +7,7 @@ public class User {
     private String email = null;
     private String name = null;
     private Role role = null;
+    private String password = null;
     private String phone = null;
 
     public User(){
@@ -17,6 +18,13 @@ public class User {
         this.email = email;
         this.name = name;
         this.role = role;
+    }
+
+    public User(String email, String name, String password, String phone) {
+        this.email = email;
+        this.name = name;
+        this.password = password;
+        this.phone = phone;
     }
 
     public Long getId() {
@@ -59,13 +67,24 @@ public class User {
         this.role = role;
     }
 
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
                 ", email='" + email + '\'' +
                 ", name='" + name + '\'' +
-                ", role=" + role +
+                ", role=" + role + '\'' +
+                ", password=" + password + '\'' +
+                ", phone=" + phone + '\'' +
                 '}';
     }
 }

@@ -16,19 +16,11 @@ public class ShiftsListController implements Handler {
 
     @Override
     public void handle(@NotNull Context ctx) throws Exception {
-//        Role userRole = (Role) AccessManager.getSessionCurrentUser(ctx).getRole();
+        Map<String, Object> model = Views.baseModel(ctx);
+        System.out.println("these are all the shifts" + ShiftsDao.INSTANCE.getAll());
 
-//        if (userRole.toString().equals("REGISTERED")){
-            //button of 'Add shift' invisible
-
-            Map<String, Object> model = Views.baseModel(ctx);
-            model.put("shifts", ShiftsDao.INSTANCE.getAll());
-            ctx.render("/views/shifts/list.html", model);
-//        }else {
-//            Map<String, Object> model = Views.baseModel(ctx);
-////            model.put("shifts", ShiftsDao.INSTANCE.getAll());
-//            ctx.render(TEMPLATE,model);
-//        }
+        model.put("shifts", ShiftsDao.INSTANCE.getAll());
+        ctx.render("/views/shifts/list.html", model);
     }
 
 

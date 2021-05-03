@@ -3,23 +3,21 @@ package app.models;
 public class Shift {
     private Long id = null;
     private String title =  null;
-    private int executor_id = 0;
+    private String staff_name = null;
     private String detail =  null;
     private String status =  null;
     private String created_time =  null;
     private String finish_time =  null;
     private String due_time =  null;
 
-    private String staff_name = null;
-
     public Shift(){
 
     }
 
-    public Shift(Long id, String title, int executor_id, String detail, String status, String created_time, String finish_time, String due_time) {
+    public Shift(Long id, String title, String staff_name, String detail, String status, String created_time, String finish_time, String due_time) {
         this.id = id;
         this.title = title;
-        this.executor_id = executor_id;
+        this.staff_name = staff_name;
         this.detail = detail;
         this.status = status;
         this.created_time = created_time;
@@ -27,15 +25,6 @@ public class Shift {
         this.due_time = due_time;
     }
 
-    public Shift(String title, int executor_id, String detail, String status, String created_time, String finish_time, String due_time) {
-        this.title = title;
-        this.executor_id = executor_id;
-        this.detail = detail;
-        this.status = status;
-        this.created_time = created_time;
-        this.finish_time = finish_time;
-        this.due_time = due_time;
-    }
 
     public Shift(String title, String staff_name, String detail, String status, String created_time, String finish_time, String due_time) {
         this.title = title;
@@ -64,12 +53,13 @@ public class Shift {
         this.title = title;
     }
 
-    public int getExecutor_id() {
-        return executor_id;
+
+    public String getStaff_name() {
+        return staff_name;
     }
 
-    public void setExecutor_id(int executor_id) {
-        this.executor_id = executor_id;
+    public void setStaff_name(String staff_name) {
+        this.staff_name = staff_name;
     }
 
     public String getDetail() {
@@ -113,20 +103,12 @@ public class Shift {
     }
 
 
-    public String getStaff_name() {
-        return staff_name;
-    }
-
-    public void setStaff_name(String staff_name) {
-        this.staff_name = staff_name;
-    }
-
     @Override
     public String toString() {
         return "Shift{" +
                 "id=" + id +
                 ", title=" + title + '\'' +
-                ", executor_id=" + executor_id + '\'' +
+                ", staff_name=" + staff_name + '\'' +
                 ", detail=" + detail + '\'' +
                 ", status=" + status + '\'' +
                 ", created_time=" + created_time + '\'' +

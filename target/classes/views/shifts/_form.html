@@ -5,39 +5,43 @@
     <input th:value="${shift.id}" type="hidden" name="id" >
 
     <div class="form-group">
-        <label for="date">Date</label>
-        <input th:value="${shift.date}" type="text" class="form-control" id="date"  name="date" aria-describedby="locationHelp" placeholder="Enter date" required>
-        <small id="locationHelp" class="form-text text-muted">Please input the date of the shift.</small>
+        <label for="title">Title</label>
+        <input th:value="${shift.title}" type="text" class="form-control" id="title"  name="title" placeholder="Enter the title" required>
     </div>
 
     <div class="form-group">
-        <label for="day">Day</label>
-        <input th:value="${shift.day}" type="text" class="form-control" id="day"  name="day" aria-describedby="locationHelp" placeholder="Enter day" required>
-        <small id="locationHelp" class="form-text text-muted">Please input the day of the shift.</small>
+        <label for="staff_name">Choose staff</label>
+        <select id="staff_name" name="staff_name" lay-verify="required" class="form-control">
+            <option th:each="staff : ${availableStaff}" th:selected="${staff.name eq staff_name}" th:value="${staff.name}"
+                    th:text="${staff.name}">staff name
+            </option>
+        </select>
     </div>
 
     <div class="form-group">
-        <label for="start_time">Start of the shift</label>
-        <input th:value="${shift.start_time}" type="text" class="form-control" id="start_time"  name="start_time" aria-describedby="locationHelp" placeholder="Enter start time" required>
-        <small id="locationHelp" class="form-text text-muted">Please input the start time of the shift.</small>
+        <label for="detail">Detail</label>
+        <input th:value="${shift.detail}" type="text" class="form-control" id="detail"  name="detail" placeholder="Enter the detail" required >
+        <small id="locationHelp" class="form-text text-muted">Please input the detail of the shift.</small>
     </div>
 
     <div class="form-group">
-        <label for="end_time">End of the shift</label>
-        <input th:value="${shift.end_time}" type="text" class="form-control" id="end_time"  name="end_time" aria-describedby="locationHelp" placeholder="Enter end time" required>
-        <small id="locationHelp" class="form-text text-muted">Please input the end time of the shift.</small>
+        <label for="status">Status of the shift</label>
+        <input th:value="${shift.status}" type="text" class="form-control" id="status"  name="status">
     </div>
 
     <div class="form-group">
-        <label for="staff"></label>
-        <input th:value="${shift.staff}" type="text" class="form-control" id="staff"  name="staff" aria-describedby="locationHelp" placeholder="Enter staff name" required>
-        <small id="locationHelp" class="form-text text-muted">Please input the name of the staff.</small>
+        <label for="created_time"></label>
+        <input th:value="${shift.created_time}" type="datetime-local" class="form-control" id="created_time"  name="created_time" aria-describedby="locationHelp">
+   </div>
+
+    <div class="form-group">
+        <label for="finish_time"></label>
+        <input th:value="${shift.finish_time}" type="datetime-local" class="form-control" id="finish_time"  name="finish_time" aria-describedby="locationHelp">
     </div>
 
     <div class="form-group">
-        <label for="position">Staff position</label>
-        <input th:value="${shift.position}" type="text" class="form-control" id="position"  name="position" aria-describedby="locationHelp" placeholder="Enter staff position" required>
-        <small id="locationHelp" class="form-text text-muted">Please input the position of the staff.</small>
+        <label for="due_time"></label>
+        <input th:value="${shift.created_time}" type="datetime-local" class="form-control" id="due_time"  name="due_time" aria-describedby="locationHelp">
     </div>
 
     <button type="submit" class="btn btn-primary">Submit</button>
