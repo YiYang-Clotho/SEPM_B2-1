@@ -29,7 +29,7 @@ public class App {
             config.registerPlugin(new RouteOverviewPlugin("/help/routes"));
             config.addStaticFiles("public/");
             config.accessManager(new AccessManager());
-        }).start(7000);
+        }).start(3000);
 
         //Register the engine to process html views
         JavalinRenderer.register(JavalinThymeleaf.INSTANCE, ".html");
