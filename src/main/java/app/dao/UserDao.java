@@ -10,7 +10,7 @@ import java.util.List;
 public class UserDao {
 
     private static final String SELECT_PWD_BY_EMAIL = "SELECT password FROM users WHERE email = ?";
-    private static final String SELECT_BY_EMAIL = "SELECT email, name, role, id, phone FROM users WHERE email = ?";
+    private static final String SELECT_BY_EMAIL = "SELECT email, name, role, id FROM users WHERE email = ?";
     private static String SELECT_ALL = "SELECT * FROM users";
     public static UserDao INSTANCE = new UserDao();
     private static String UPDATE = "UPDATE users SET email = ?, name = ?,  phone = ? WHERE id=?";
@@ -41,7 +41,6 @@ public class UserDao {
             user.setName(rs.getString(2));
             user.setRole(Role.valueOf(rs.getString(3)));
             user.setId(rs.getLong(4));
-            user.setPhone(rs.getString(5));
             return user;
         }
         connection.close();
@@ -54,7 +53,7 @@ public class UserDao {
         ResultSet rs = stm.executeQuery(SELECT_ALL);
         List<User> users = new ArrayList<>();
         while (rs.next()) {
-            users.add(mapUser(rs));
+            users.add(mapUser_ALL(rs));
         }
         connection.close();
         return users;
@@ -69,17 +68,15 @@ public class UserDao {
         return stm.executeUpdate();
     }
 
-    private User mapUser(ResultSet rs) throws SQLException {
+    private User mapUser_ALL(ResultSet rs) throws SQLException {
         User user = new User(rs.getString(2),
                 rs.getString(3),
-                rs.getInt(4),
-                rs.getString(6),
-                rs.getString(7));
+                rs.getString(5),
+                rs.getString(6)
+                );
         user.setId(rs.getLong(1));
-        user.setRole(Role.valueOf(rs.getString(5)));
+        user.setRole(Role.valueOf(rs.getString(4)));
         return user;
     }
 
 }
-
-

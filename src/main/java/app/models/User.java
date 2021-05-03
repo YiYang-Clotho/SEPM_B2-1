@@ -9,7 +9,6 @@ public class User {
     private Role role = null;
     private String password = null;
     private String phone = null;
-    private int age = 0;
 
     public User(){
 
@@ -21,10 +20,9 @@ public class User {
         this.role = role;
     }
 
-    public User(String email, String name, int age, String password, String phone) {
+    public User(String email, String name, String password, String phone) {
         this.email = email;
         this.name = name;
-        this.age = age;
         this.password = password;
         this.phone = phone;
     }
@@ -78,23 +76,12 @@ public class User {
         this.password = password;
     }
 
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
                 ", email='" + email + '\'' +
                 ", name='" + name + '\'' +
-                ", age='" + age + '\'' +
                 ", role=" + role + '\'' +
                 ", password=" + password + '\'' +
                 ", phone=" + phone + '\'' +

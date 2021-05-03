@@ -4,10 +4,5 @@ CREATE TABLE users(
     name VARCHAR(255) not null,
     role VARCHAR(100) not null,
     password VARCHAR(60) not null,
-<<<<<<< HEAD
-    role VARCHAR(100) not null,
-    age int not null
-=======
     phone VARCHAR(255) not null
->>>>>>> shift_list
  );
