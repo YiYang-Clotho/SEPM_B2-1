@@ -11,12 +11,13 @@ public class ShiftsCreateController implements Handler {
     @Override
     public void handle(@NotNull Context ctx) throws Exception {
         Shift shift = new Shift(
-                ctx.formParam("date"),
-                ctx.formParam("day"),
-                ctx.formParam("start_time"),
-                ctx.formParam("end_time"),
-                ctx.formParam("staff"),
-                ctx.formParam("position")
+                ctx.formParam("title", String.class).get(),
+                ctx.formParam("staff_name", String.class).get(),
+                ctx.formParam("detail", String.class).get(),
+                ctx.formParam("status", String.class).get(),
+                ctx.formParam("created_time", String.class).get(),
+                ctx.formParam("finish_time", String.class).get(),
+                ctx.formParam("due_time", String.class).get()
         );
 
         shift = ShiftsDao.INSTANCE.create(shift);

@@ -5,8 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ecb52f6-4a90-434a-9b66-c367270dc65d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V3__create_shifts_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V4__insert_shifts.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsCreateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsCreateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/ShiftsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/ShiftsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/models/Shift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/models/Shift.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2__insert_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__insert_users.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V3_create_shifts_table.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V4_insert_shifts.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/shifts/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/shifts/ShiftsCreateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controllers/shifts/ShiftsCreateController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/dao/ShiftsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/dao/ShiftsDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/models/Shift.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/models/Shift.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V2__insert_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V2__insert_users.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V3_create_shifts_table.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V4_insert_shifts.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/shifts/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/shifts/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp.trace.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +55,9 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
+      <command value="mvn flyway:history" />
       <command value="mvn flyway:migrate" />
+      <command value="mvn flyway:repair" />
     </option>
   </component>
   <component name="RunManager" selected="Application.App">

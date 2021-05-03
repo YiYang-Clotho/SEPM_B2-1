@@ -2,76 +2,137 @@ package app.models;
 
 public class Shift {
     private Long id = null;
-    private String staff = null;
-    private String start_time = null;
-    private String end_time = null;
-    private String position = null;
-    private String day = null;
-    private String date = null;
+    private String title =  null;
+    private int executor_id = 0;
+    private String detail =  null;
+    private String status =  null;
+    private String created_time =  null;
+    private String finish_time =  null;
+    private String due_time =  null;
+
+    private String staff_name = null;
 
     public Shift(){
 
     }
 
-    public  Shift(String date, String day, String start_time, String end_time, String staff, String position){
-        this.date = date;
-        this.day = day;
-        this.start_time = start_time;
-        this.end_time = end_time;
-        this.staff = staff;
-        this.position = position;
+    public Shift(Long id, String title, int executor_id, String detail, String status, String created_time, String finish_time, String due_time) {
+        this.id = id;
+        this.title = title;
+        this.executor_id = executor_id;
+        this.detail = detail;
+        this.status = status;
+        this.created_time = created_time;
+        this.finish_time = finish_time;
+        this.due_time = due_time;
     }
 
-    public Long getID(){
-        return this.id;
+    public Shift(String title, int executor_id, String detail, String status, String created_time, String finish_time, String due_time) {
+        this.title = title;
+        this.executor_id = executor_id;
+        this.detail = detail;
+        this.status = status;
+        this.created_time = created_time;
+        this.finish_time = finish_time;
+        this.due_time = due_time;
     }
-    public void setID(Long id){
+
+    public Shift(String title, String staff_name, String detail, String status, String created_time, String finish_time, String due_time) {
+        this.title = title;
+        this.staff_name = staff_name;
+        this.detail = detail;
+        this.status = status;
+        this.created_time = created_time;
+        this.finish_time = finish_time;
+        this.due_time = due_time;
+    }
+
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public String getDate(){
-        return this.date;
-    }
-    public void setDate(String date){
-        this.date = date;
+    public String getTitle() {
+        return title;
     }
 
-    public String getDay(){
-        return this.day;
-    }
-    public void setDay(String day){
-        this.day = day;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getStart_time(){
-        return this.start_time;
-    }
-    public void setStart_time(String start_time){
-        this.start_time = start_time;
+    public int getExecutor_id() {
+        return executor_id;
     }
 
-    public String getEnd_time(){
-        return this.end_time;
-    }
-    public void setEnd_time(String end_time){
-        this.end_time = end_time;
+    public void setExecutor_id(int executor_id) {
+        this.executor_id = executor_id;
     }
 
-    public String getStaff(){
-        return this.staff;
-    }
-    public void setStaff(String staff){
-        this.staff = staff;
+    public String getDetail() {
+        return detail;
     }
 
-    public String getPosition(){
-        return this.position;
-    }
-    public void setPosition(String position){
-        this.position = position;
+    public void setDetail(String detail) {
+        this.detail = detail;
     }
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getCreated_time() {
+        return created_time;
+    }
+
+    public void setCreated_time(String created_time) {
+        this.created_time = created_time;
+    }
+
+    public String getFinish_time() {
+        return finish_time;
+    }
+
+    public void setFinish_time(String finish_time) {
+        this.finish_time = finish_time;
+    }
+
+    public String getDue_time() {
+        return due_time;
+    }
+
+    public void setDue_time(String due_time) {
+        this.due_time = due_time;
+    }
 
 
+    public String getStaff_name() {
+        return staff_name;
+    }
+
+    public void setStaff_name(String staff_name) {
+        this.staff_name = staff_name;
+    }
+
+    @Override
+    public String toString() {
+        return "Shift{" +
+                "id=" + id +
+                ", title=" + title + '\'' +
+                ", executor_id=" + executor_id + '\'' +
+                ", detail=" + detail + '\'' +
+                ", status=" + status + '\'' +
+                ", created_time=" + created_time + '\'' +
+                ", finish_time=" + finish_time + '\'' +
+                ", due_time=" + due_time +
+                '}';
+    }
 }
 
