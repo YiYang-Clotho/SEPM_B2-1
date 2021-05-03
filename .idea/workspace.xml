@@ -40,7 +40,7 @@
       <command value="mvn flyway:migrate" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.DBMigrate">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.App" />
       <module name="shift-system" />
@@ -69,8 +69,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DBMigrate" />
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.DBMigrate" />
       </list>
     </recent_temporary>
   </component>
