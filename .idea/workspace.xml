@@ -5,22 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ecb52f6-4a90-434a-9b66-c367270dc65d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/css/me.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_javalin_javalin_3_7_02.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_92.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/welcome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/css/welcome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/auth/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/fragments/common.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/fragments/common.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/users/me.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/users/me.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/css/welcome.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/css/welcome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/views/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/auth/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/views/fragments/common.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/fragments/common.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/views/users/me.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/users/me.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_javalin_javalin_3_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +112,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
