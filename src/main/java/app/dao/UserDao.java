@@ -68,6 +68,9 @@ public class UserDao {
         return stm.executeUpdate();
     }
 
+
+
+
     private User mapUser_ALL(ResultSet rs) throws SQLException {
         User user = new User(rs.getString(2),
                 rs.getString(3),
