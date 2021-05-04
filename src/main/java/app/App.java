@@ -2,6 +2,9 @@ package app;
 
 import app.auth.AccessManager;
 import app.auth.LoginController;
+import app.controllers.availabilities.AvailabilitiesCreateController;
+import app.controllers.availabilities.AvailabilitiesListController;
+import app.controllers.availabilities.AvailabilitiesNewController;
 import app.controllers.shifts.ShiftsCreateController;
 import app.controllers.shifts.ShiftsListController;
 import app.controllers.shifts.ShiftsNewController;
@@ -71,7 +74,10 @@ public class App {
         app.post("/shifts", new ShiftsCreateController(), roles(Role.ADMIN));
 
 
-
+        //availabilities
+        app.get("/availabilities", new AvailabilitiesListController(), roles(Role.ADMIN));
+        app.get("/availabilities/new", new AvailabilitiesNewController(), roles(Role.REGISTERED));
+        app.post("/availabilities", new AvailabilitiesCreateController(), roles(Role.REGISTERED));
 
     }
 

@@ -5,59 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ecb52f6-4a90-434a-9b66-c367270dc65d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_javalin_javalin_3_7_02.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_92.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsCreateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsNewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersEditController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersUpdateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/dao/ShiftsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/models/Shift.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V3__create_shifts_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V4__insert_shifts.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/new.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/users/_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/users/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/welcome/Register 2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/app/controllers/shifts/ShiftsCreateController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/app/controllers/shifts/ShiftsListController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/app/controllers/shifts/ShiftsNewController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersEditController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersUpdateController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/app/dao/ShiftsDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/app/models/Shift.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V3__create_shifts_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V4__insert_shifts.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/views/shifts/_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/views/shifts/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/views/shifts/new.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/views/users/_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/views/users/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/views/welcome/Register 2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/webapp.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersMeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersMeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__create_users_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__create_users_table.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2__insert_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__insert_users.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/users/me.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/users/me.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/shifts/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/views/welcome/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/welcome/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersMeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersMeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V1__create_users_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V1__create_users_table.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V2__insert_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V2__insert_users.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/views/users/me.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/users/me.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/shifts/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/shifts/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/views/welcome/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/welcome/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webapp.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp.mv.db" afterDir="false" />
     </list>
@@ -87,7 +40,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/views" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Hx1920\Desktop\新建文件夹 (2)\SEPM_B2-1\src\main\resources\views" />
+      <recent name="C:\Users\Hx1920\Desktop\新建文件夹 (2)\SEPM_B2-1\src\main\java\app\controllers" />
+      <recent name="C:\Users\Hx1920\Desktop\新建文件夹 (2)\SEPM_B2-1\src\main\resources\db\migration" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="app.dao" />
+      <recent name="app.models" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Hx1920\Desktop\新建文件夹 (2)\SEPM_B2-1\src\main\resources\db\migration" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -131,7 +98,10 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="4ecb52f6-4a90-434a-9b66-c367270dc65d" name="Default Changelist" comment="" />
@@ -157,6 +127,24 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1620072582967">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1620072582967" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1620072582967">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1620072582967" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1620072582967">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1620072582967" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1620072582967">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1620072582967" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -164,6 +152,16 @@
           <properties class="org.h2.jdbc.JdbcSQLDataException" package="org.h2.jdbc" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/controllers/users/UsersMeController.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/controllers/availabilities/AvailabilitiesCreateController.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

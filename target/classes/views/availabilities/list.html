@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Common head content is included from common.html  -->
+    <th:block th:include="/views/fragments/common.html :: commonhead"></th:block>
+
+    <!-- Include custom head for this head after this line -->
+    <title>Staff Availabilities List</title>
+
+
+    <!-- You can create a css with styles only for this page -->
+    <!-- <link href="/css/yourpage.css" rel="stylesheet">-->
+</head>
+
+<body>
+
+<!-- Nav bar is located in common.html -->
+<header th:replace="/views/fragments/common.html :: header"></header>
+
+<!-- Begin THIS page content -->
+<main role="main" class="container ">
+    <h1>Availabilities List Page
+<!--        <a class="btn btn-success" href="/availabilities/new" role="button">Create an availability</a>-->
+    </h1>
+
+<div>
+    <table style="width:100%">
+        <tr>
+            <th>Start time</th>
+            <th>End time</th>
+            <th>Staff name</th>
+        </tr>
+
+        <tr th:each="availability : ${availabilities}">
+            <td th:text="${availability.start_time}">Card title></td>
+            <td th:text="${availability.end_time}">Card title></td>
+            <td th:text="${availability.staff_name}">Card title></td>
+        </tr>
+
+    </table>
+</div>
+
+</main>
+<!-- End THIS page content -->
+
+
+<!-- Footer is located in common.html -->
+<footer class="footer" th:replace="/views/fragments/common.html :: footer"></footer>
+
+<!-- Bootstrap Scripts  -->
+<th:block th:include="/views/fragments/common.html :: scripts"></th:block>
+</body>
+</html>
