@@ -22,26 +22,48 @@
     <h1>Shift List Page
         <a class="btn btn-success" href="/shifts/new" role="button">Create a new shift</a></h1>
 
+    <div>
+        <table style="width:100%">
+            <tr>
+                <th>Shift title</th>
+                <th>Executor name</th>
+                <th>Shift detail</th>
+                <th>Shift status</th>
+                <th>Created time</th>
+                <th>Finish time</th>
+                <th>Due time</th>
+            </tr>
 
-    <div class="card-columns">
-                <div th:each="shift : ${shifts}" class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">Shift title:<span th:text="${shift.title}">Card title></span></h4>
-                        <h4 class="card-title">Executor name:<span th:text="${shift.staff_name}">Card title></span></h4>
-                        <h4 class="card-title">Shift detail:<span th:text="${shift.detail}">Card title></span></h4>
-                        <h4 class="card-title">Shift status:<span th:text="${shift.status}">Card title></span></h4>
-                        <h4 class="card-title">Created time:<span th:text="${shift.created_time}">Card title></span></h4>
-                        <h4 class="card-title">Finish time:<span th:text="${shift.finish_time}">Card title></span></h4>
-                        <h4 class="card-title">Due time:<span th:text="${shift.due_time}">Card title></span></h4>
-
-                        <!--                <h4 class="card-title">Theater number:<span th:text="${s.theater_id}"></span></h4>-->
-
-        <!--                <a th:href="@{/sessions/{id}(id=${s.id})}" class="btn btn-outline-info card-link">See More</a>-->
-        <!--                <a class="btn btn-success" th:href="@{/sessions/remove/{id}(id=${s.id})}" role="button">remove</a>-->
-
-                    </div>
-                </div>
+            <tr th:each="shift : ${shifts}">
+                <td th:text="${shift.title}">Card title></td>
+                <td th:text="${shift.staff_name}">Card title></td>
+                <td th:text="${shift.detail}">Card title></td>
+                <td th:text="${shift.status}">Card title></td>
+                <td th:text="${shift.created_time}">Card title></td>
+                <td th:text="${shift.finish_time}">Card title></td>
+                <td th:text="${shift.due_time}">Card title></td>
+            </tr>
+        </table>
     </div>
+<!--    <div class="card-columns">-->
+<!--                <div th:each="shift : ${shifts}" class="card">-->
+<!--                    <div class="card-body">-->
+<!--                        <h4 class="card-title">Shift title:<span th:text="${shift.title}">Card title></span></h4>-->
+<!--                        <h4 class="card-title">Executor name:<span th:text="${shift.staff_name}">Card title></span></h4>-->
+<!--                        <h4 class="card-title">Shift detail:<span th:text="${shift.detail}">Card title></span></h4>-->
+<!--                        <h4 class="card-title">Shift status:<span th:text="${shift.status}">Card title></span></h4>-->
+<!--                        <h4 class="card-title">Created time:<span th:text="${shift.created_time}">Card title></span></h4>-->
+<!--                        <h4 class="card-title">Finish time:<span th:text="${shift.finish_time}">Card title></span></h4>-->
+<!--                        <h4 class="card-title">Due time:<span th:text="${shift.due_time}">Card title></span></h4>-->
+
+<!--                        &lt;!&ndash;                <h4 class="card-title">Theater number:<span th:text="${s.theater_id}"></span></h4>&ndash;&gt;-->
+
+<!--        &lt;!&ndash;                <a th:href="@{/sessions/{id}(id=${s.id})}" class="btn btn-outline-info card-link">See More</a>&ndash;&gt;-->
+<!--        &lt;!&ndash;                <a class="btn btn-success" th:href="@{/sessions/remove/{id}(id=${s.id})}" role="button">remove</a>&ndash;&gt;-->
+
+<!--                    </div>-->
+<!--                </div>-->
+<!--    </div>-->
 </main>
 <!-- End THIS page content -->
 
