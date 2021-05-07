@@ -36,7 +36,6 @@ public class Shift {
         this.due_time = due_time;
     }
 
-
     public Long getId() {
         return id;
     }

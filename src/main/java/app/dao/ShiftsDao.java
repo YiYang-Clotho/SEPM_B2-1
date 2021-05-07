@@ -1,6 +1,7 @@
 package app.dao;
 
 import app.models.Shift;
+import app.models.User;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -11,9 +12,9 @@ public class ShiftsDao {
     public static ShiftsDao INSTANCE = new ShiftsDao();
 
     private static String SELECT_ALL = "SELECT * FROM shifts";
-    //    private static String SELECT_BY_ID = "SELECT * FROM cinemas WHERE id=?";
+    private static String SELECT_BY_ID = "SELECT * FROM shifts WHERE id=?";
     private static String INSERT = "INSERT INTO shifts(title, staff_name, detail, status, created_time, finish_time, due_time) VALUES(?,?,?,?,?,?,?)";
-//    private static String UPDATE = "UPDATE cinemas SET location = ?, tel = ?  WHERE id=?";
+    private static String UPDATE = "UPDATE shifts SET title = ?, staff_name = ?, detail = ?, status = ?, created_time = ?, finish_time = ?, due_time = ? WHERE id=?";
 //    private static String REMOVE_CINEMA = "DELETE FROM cinemas WHERE id=?";
 
     private ShiftsDao(){
@@ -30,6 +31,19 @@ public class ShiftsDao {
         }
         connection.close();
         return shifts;
+    }
+
+    public Shift getByID(Long id) throws SQLException {
+        Connection connection = DBUtils.getConnection();
+        PreparedStatement stm = connection.prepareStatement(SELECT_BY_ID);
+        stm.setLong(1, id);
+        ResultSet rs = stm.executeQuery();
+        if (rs.next()) {
+            Shift shift = mapShift_ALL(rs);
+            return shift;
+        }
+        connection.close();
+        throw new SQLException("No Session with id = " + id);
     }
 
     public Shift create(Shift shift) throws SQLException {
@@ -54,6 +68,20 @@ public class ShiftsDao {
         return shift;
     }
 
+    public int update(Shift shift) throws SQLException {
+        Connection connection = DBUtils.getConnection();
+        PreparedStatement stm = connection.prepareStatement(UPDATE);
+        stm.setString(1, shift.getTitle());
+        stm.setString(2, shift.getStaff_name());
+        stm.setString(3, shift.getDetail());
+        stm.setString(4, shift.getStatus());
+        stm.setString(5, shift.getCreated_time());
+        stm.setString(6, shift.getFinish_time());
+        stm.setString(7, shift.getDue_time());
+        stm.setLong(8, shift.getId());
+        return stm.executeUpdate();
+    }
+
     private Shift mapShift_ALL(ResultSet rs) throws SQLException {
         Shift shift = new Shift(rs.getString(2),
                 rs.getString(3),
@@ -65,5 +93,4 @@ public class ShiftsDao {
         shift.setId(rs.getLong(1));
         return shift;
     }
-
 }

@@ -33,12 +33,8 @@
                         <h4 class="card-title">Created time:<span th:text="${shift.created_time}">Card title></span></h4>
                         <h4 class="card-title">Finish time:<span th:text="${shift.finish_time}">Card title></span></h4>
                         <h4 class="card-title">Due time:<span th:text="${shift.due_time}">Card title></span></h4>
-
-                        <!--                <h4 class="card-title">Theater number:<span th:text="${s.theater_id}"></span></h4>-->
-
-        <!--                <a th:href="@{/sessions/{id}(id=${s.id})}" class="btn btn-outline-info card-link">See More</a>-->
-        <!--                <a class="btn btn-success" th:href="@{/sessions/remove/{id}(id=${s.id})}" role="button">remove</a>-->
-
+                        <a th:href="@{/shifts/{id}(id=${shift.id})}" class="btn btn-outline-info card-link">See More</a>
+                        <a class="btn btn-success" th:href="@{/shifts/remove/{id}(id=${shift.id})}" role="button">remove</a>
                     </div>
                 </div>
     </div>

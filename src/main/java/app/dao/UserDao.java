@@ -69,12 +69,13 @@ public class UserDao {
     }
 
     private User mapUser_ALL(ResultSet rs) throws SQLException {
-        User user = new User(rs.getString(2),
+        User user = new User(
+                rs.getLong(1),
+                rs.getString(2),
                 rs.getString(3),
                 rs.getString(5),
                 rs.getString(6)
                 );
-        user.setId(rs.getLong(1));
         user.setRole(Role.valueOf(rs.getString(4)));
         return user;
     }

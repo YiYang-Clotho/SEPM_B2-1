@@ -1,6 +1,7 @@
 package app.models;
 
 import io.javalin.core.security.Role;
+import org.eclipse.jetty.io.ArrayByteBufferPool;
 
 public class User {
     private Long id = null;
@@ -21,6 +22,14 @@ public class User {
     }
 
     public User(String email, String name, String password, String phone) {
+        this.email = email;
+        this.name = name;
+        this.password = password;
+        this.phone = phone;
+    }
+
+    public User(Long id, String email, String name, String password, String phone) {
+        this.id = id;
         this.email = email;
         this.name = name;
         this.password = password;
