@@ -68,7 +68,7 @@ public class App {
         app.get("/shifts/new", new ShiftsNewController(), roles(Role.ADMIN));
         app.post("/shifts", new ShiftsCreateController(), roles(Role.ADMIN));
         app.get("/shifts/:id/edit", new ShiftsEditController(), roles(Role.ADMIN));
-        app.post("shifts/:id", new ShiftsCreateController(), roles(Role.ADMIN));
+        app.post("sessions/:id", new ShiftsUpdateController());
         app.get("/shifts/:id", new ShiftsShowController());
 
 

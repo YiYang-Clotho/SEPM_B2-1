@@ -17,7 +17,7 @@ public class UsersUpdateController implements Handler {
         User user = new User();
 
         user.setEmail(ctx.formParam("email"));
-        user.setPhone(ctx.formParam("phone"));
+        user.setPhone_number(ctx.formParam("phone"));
         user.setName(ctx.formParam("name"));
 
         UserDao.INSTANCE.update(user);

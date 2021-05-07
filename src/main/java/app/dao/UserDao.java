@@ -11,7 +11,7 @@ public class UserDao {
 
     private static final String SELECT_PWD_BY_EMAIL = "SELECT password FROM users WHERE email = ?";
     private static final String SELECT_BY_EMAIL = "SELECT email, name, role, id FROM users WHERE email = ?";
-    private static String SELECT_ALL = "SELECT * FROM users";
+    private static String SELECT_ALL = "SELECT id, email, name, role, password FROM users";
     public static UserDao INSTANCE = new UserDao();
     private static String UPDATE = "UPDATE users SET email = ?, name = ?,  phone = ? WHERE id=?";
 
@@ -64,18 +64,16 @@ public class UserDao {
         PreparedStatement stm = connection.prepareStatement(UPDATE);
         stm.setString(1, user.getEmail());
         stm.setString(2, user.getName());
-        stm.setString(3, user.getPhone());
+        stm.setString(3, user.getPhone_number());
         return stm.executeUpdate();
     }
 
     private User mapUser_ALL(ResultSet rs) throws SQLException {
-        User user = new User(
-                rs.getLong(1),
-                rs.getString(2),
-                rs.getString(3),
-                rs.getString(5),
-                rs.getString(6)
-                );
+        User user = new User();
+        user.setEmail(rs.getString(2));
+        user.setName(rs.getString(3));
+        user.setPassword(rs.getString(5));
+        user.setId(rs.getLong(1));
         user.setRole(Role.valueOf(rs.getString(4)));
         return user;
     }

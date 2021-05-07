@@ -17,6 +17,7 @@ public class ShiftsNewController implements Handler {
         ctx.render("/views/shifts/new.html", model);
 
         Map<String, Object> model_availableStaff = Views.baseModel(ctx);
+        System.out.println("all users: " +  UserDao.INSTANCE.getAll() );
         model_availableStaff.put("availableStaff", UserDao.INSTANCE.getAll());
         ctx.render("/views/shifts/new.html", model_availableStaff);
     }

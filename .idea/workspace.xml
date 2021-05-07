@@ -5,27 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ecb52f6-4a90-434a-9b66-c367270dc65d" name="Default Changelist" comment="add maven file">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsEditController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsShowController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsUpdateController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsNewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsNewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/ShiftsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/ShiftsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersUpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersUpdateController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/models/Shift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/models/Shift.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/shifts/_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/shifts/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__create_users_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__create_users_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2__insert_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__insert_users.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/users/me.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/users/me.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/shifts/ShiftsNewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controllers/shifts/ShiftsNewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/dao/ShiftsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/dao/ShiftsDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersUpdateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersUpdateController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/app/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/models/Shift.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/models/Shift.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/app/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/views/shifts/_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/shifts/_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/views/shifts/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/shifts/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V1__create_users_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V1__create_users_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V2__insert_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V2__insert_users.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/users/me.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/users/me.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webapp.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp.mv.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webapp.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp.trace.db" afterDir="false" />
     </list>
@@ -37,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -110,6 +107,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.DBMigrate" />
+        <item itemvalue="Application.DBMigrate" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.DBMigrate" />
       </list>

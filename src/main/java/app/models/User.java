@@ -7,9 +7,9 @@ public class User {
     private Long id = null;
     private String email = null;
     private String name = null;
+    private String phone_number = null;
     private Role role = null;
     private String password = null;
-    private String phone = null;
 
     public User(){
 
@@ -21,19 +21,12 @@ public class User {
         this.role = role;
     }
 
-    public User(String email, String name, String password, String phone) {
-        this.email = email;
-        this.name = name;
-        this.password = password;
-        this.phone = phone;
-    }
-
-    public User(Long id, String email, String name, String password, String phone) {
+    public User(Long id, String email, String name,  Role role, String password) {
         this.id = id;
         this.email = email;
         this.name = name;
+        this.role = role;
         this.password = password;
-        this.phone = phone;
     }
 
     public Long getId() {
@@ -60,12 +53,12 @@ public class User {
         this.name = name;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getPhone_number() {
+        return phone_number;
     }
 
-    public void setPhone(String num) {
-        this.phone = phone;
+    public void setPhone_number(String phone_number) {
+        this.phone_number = phone_number;
     }
 
     public Role getRole() {
@@ -91,9 +84,9 @@ public class User {
                 "id=" + id +
                 ", email='" + email + '\'' +
                 ", name='" + name + '\'' +
+        //        ", phone_number='" + phone_number + '\'' +
                 ", role=" + role + '\'' +
                 ", password=" + password + '\'' +
-                ", phone=" + phone + '\'' +
                 '}';
     }
 }
