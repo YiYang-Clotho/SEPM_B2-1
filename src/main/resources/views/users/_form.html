@@ -2,39 +2,27 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <body>
 <div th:fragment="form">
-    <input th:value="${cinema.id}" type="hidden" name="id" >
+    <input th:value="${shift.id}" type="hidden" name="id" >
+
     <div class="form-group">
-        <label for="location">location</label>
-        <input th:value="${cinema.location}" type="text" class="form-control" id="location"  name="location" aria-describedby="locationHelp" placeholder="Enter cinema location" required>
-        <small id="locationHelp" class="form-text text-muted">Please input the cinema's location.</small>
-    </div>
-    <div class="form-group">
-        <label for="tel">Tel</label>
-        <input th:value="${cinema.tel}" type="text" class="form-control" id="tel"  name="tel" aria-describedby="telHelp" placeholder="Enter cinema tel" required onchange="pass1()">
-        <small id="telHelp" class="form-text text-muted">Please input the cinema's tel.</small>
+<!--        <label for="name"></label>-->
+        <input th:value="${user.id}" type="text" class="form-control" id="id"  name="id" placeholder="Enter the title" required>
     </div>
 
+    <div class="form-group">
+        <label for="name"></label>
+        <input th:value="${user.name}" type="text" class="form-control" id="name"  name="name" placeholder="Enter the title" required>
+    </div>
 
+    <div class="form-group">
+        <label for="email"></label>
+        <input th:value="${user.email}" type="text-local" class="form-control" id="email"  name="email" aria-describedby="locationHelp">
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="form-group">
+        <label for="phone"></label>
+        <input th:value="${user.phone}" type="text-local" class="form-control" id="phone"  name="phone" aria-describedby="locationHelp">
+    </div>
 
     <button type="submit" class="btn btn-primary">Submit</button>
 </div>

@@ -18,16 +18,12 @@
 
 <!-- Begin THIS page content -->
 <main role="main" class="container ">
-    <h1>Restricted Page</h1>
-    <h2>Current User information</h2>
-    <p><b>id:</b> <span th:text="${user.id}"></span></p>
-    <p><b>Name:</b> <span th:text="${user.name}"></span></p>
-    <p><b>Email:</b> <span th:text="${user.email}"></span></p>
-    <p><b>Phone:</b> <span th:text="${user.phone}"></span></p>
-    <p><b>Role:</b> <span th:text="${user.role}"></span></p>
+    <h1>Profile Edit</h1>
 
+    <form action="/users/me" method="post">
+        <th:block th:include="/views/users/_form.html :: form"></th:block>
+    </form>
 </main>
-
 <!-- End THIS page content -->
 
 

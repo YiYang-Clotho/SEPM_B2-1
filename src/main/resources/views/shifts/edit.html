@@ -18,10 +18,10 @@
 
 <!-- Begin THIS page content -->
 <main role="main" class="container ">
-    <h1>Profile Edit</h1>
+    <h1>New Shift</h1>
 
-    <form action="/users/me" method="post">
-        <th:block th:include="/views/users/_form.html :: form"></th:block>
+    <form th:action="@{/shifts/{id}(id=${shift.id})}" method="post">
+        <th:block th:include="/views/shifts/_form.html :: form"></th:block>
     </form>
 </main>
 <!-- End THIS page content -->

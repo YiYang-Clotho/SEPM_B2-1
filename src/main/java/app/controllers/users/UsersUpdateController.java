@@ -16,9 +16,10 @@ public class UsersUpdateController implements Handler {
         Map<String, Object> model = Views.baseModel(ctx);
         User user = new User();
 
-        user.setEmail(ctx.formParam("email"));
-        user.setPhone(ctx.formParam("phone"));
-        user.setName(ctx.formParam("name"));
+        user.setEmail(ctx.formParam("email", String.class).get());
+        user.setPhone(ctx.formParam("phone", String.class).get());
+        user.setName(ctx.formParam("name", String.class).get());
+        user.setId(ctx.formParam("id", Long.class).get());
 
         UserDao.INSTANCE.update(user);
         ctx.redirect("/users/me");

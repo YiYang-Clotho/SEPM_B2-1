@@ -65,6 +65,7 @@ public class UserDao {
         stm.setString(1, user.getEmail());
         stm.setString(2, user.getName());
         stm.setString(3, user.getPhone());
+        stm.setLong(4, user.getId());
         return stm.executeUpdate();
     }
 

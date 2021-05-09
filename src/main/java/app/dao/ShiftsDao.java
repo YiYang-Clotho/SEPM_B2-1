@@ -15,6 +15,8 @@ public class ShiftsDao {
     private static String INSERT = "INSERT INTO shifts(title, staff_name, detail, status, created_time, finish_time, due_time) VALUES(?,?,?,?,?,?,?)";
 //    private static String UPDATE = "UPDATE cinemas SET location = ?, tel = ?  WHERE id=?";
 //    private static String REMOVE_CINEMA = "DELETE FROM cinemas WHERE id=?";
+    private static String SELECT_BY_ID = "SELECT * FROM shifts WHERE id=?";
+    private static String UPDATE = "UPDATE shifts SET title = ?, staff_name = ?, detail = ?, status = ?, created_time = ?, finish_time = ?, due_time = ? WHERE id=?";
 
     private ShiftsDao(){
 
@@ -66,4 +68,30 @@ public class ShiftsDao {
         return shift;
     }
 
+    public Shift getByID(Long id) throws SQLException {
+        Connection connection = DBUtils.getConnection();
+        PreparedStatement stm = connection.prepareStatement(SELECT_BY_ID);
+        stm.setLong(1, id);
+        ResultSet rs = stm.executeQuery();
+        if (rs.next()) {
+            Shift shift = mapShift_ALL(rs);
+            return shift;
+        }
+        connection.close();
+        throw new SQLException("No Session with id = " + id);
+    }
+
+    public int update(Shift shift) throws SQLException {
+        Connection connection = DBUtils.getConnection();
+        PreparedStatement stm = connection.prepareStatement(UPDATE);
+        stm.setString(1, shift.getTitle());
+        stm.setString(2, shift.getStaff_name());
+        stm.setString(3, shift.getDetail());
+        stm.setString(4, shift.getStatus());
+        stm.setString(5, shift.getCreated_time());
+        stm.setString(6, shift.getFinish_time());
+        stm.setString(7, shift.getDue_time());
+        stm.setLong(8, shift.getId());
+        return stm.executeUpdate();
+    }
 }

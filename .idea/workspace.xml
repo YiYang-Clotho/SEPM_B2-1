@@ -5,15 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ecb52f6-4a90-434a-9b66-c367270dc65d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsEditController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsShowController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsUpdateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/list1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/show.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsNewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsNewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersEditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersEditController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersUpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersUpdateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/ShiftsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/ShiftsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/shifts/_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/views/shifts/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/users/_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/users/_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/users/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/users/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/shifts/ShiftsListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controllers/shifts/ShiftsListController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/shifts/ShiftsNewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controllers/shifts/ShiftsNewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersEditController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersEditController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersUpdateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersUpdateController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/dao/ShiftsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/dao/ShiftsDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/app/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/shifts/_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/shifts/_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/shifts/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/shifts/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/users/_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/users/_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/users/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/users/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webapp.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp.trace.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,10 +70,17 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/app/controllers/shifts" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Hx1920\Desktop\main\SEPM_B2-1\src\main\java\app\controllers\shifts" />
+      <recent name="C:\Users\Hx1920\Desktop\main\SEPM_B2-1\src\main\resources\views\shifts" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -109,21 +151,21 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1860" height="279" key="GridCell.Tab.0.bottom" timestamp="1620203463426">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1620567604432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1620203463426" />
-    <state width="1860" height="279" key="GridCell.Tab.0.center" timestamp="1620203463426">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1620567604432" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1620567604432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1620203463426" />
-    <state width="1860" height="279" key="GridCell.Tab.0.left" timestamp="1620203463425">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1620567604432" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1620567604432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1620203463425" />
-    <state width="1860" height="279" key="GridCell.Tab.0.right" timestamp="1620203463426">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1620567604432" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1620567604432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1620203463426" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1620567604432" />
   </component>
 </project>

@@ -2,11 +2,10 @@ package app;
 
 import app.auth.AccessManager;
 import app.auth.LoginController;
-import app.controllers.shifts.ShiftsCreateController;
-import app.controllers.shifts.ShiftsListController;
-import app.controllers.shifts.ShiftsNewController;
+import app.controllers.shifts.*;
 import app.controllers.users.UsersEditController;
 import app.controllers.users.UsersMeController;
+import app.controllers.users.UsersUpdateController;
 import app.controllers.welcome.WelcomeController;
 import app.models.Role;
 import app.utils.Views;
@@ -58,19 +57,20 @@ public class App {
             ctx.redirect("/");
         });
 
+        //profile
         app.get("/users/me", new UsersMeController(),roles(Role.REGISTERED,Role.ADMIN));
-
         app.get("/users/me/edit", new UsersEditController(),roles(Role.REGISTERED,Role.ADMIN));
+        app.post("/users/me", new UsersUpdateController(),roles(Role.REGISTERED,Role.ADMIN));
 
-//        app.get("/users/me/edit", new UsersEditController(),roles(Role.REGISTERED,Role.ADMIN));
-//
-//        app.get("/users/me/edit", new UsersEditController(),roles(Role.REGISTERED,Role.ADMIN));
 
+        //shift
         app.get("/shifts", new ShiftsListController());
         app.get("/shifts/new", new ShiftsNewController(), roles(Role.ADMIN));
         app.post("/shifts", new ShiftsCreateController(), roles(Role.ADMIN));
 
-
+        app.get("/shifts/:id/edit", new ShiftsEditController(), roles(Role.ADMIN));
+        app.post("shifts/:id", new ShiftsUpdateController(), roles(Role.ADMIN));
+        app.get("/shifts/:id", new ShiftsShowController(), roles(Role.ADMIN));
 
 
     }

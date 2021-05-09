@@ -8,18 +8,17 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Map;
 
-public class ShiftsListController implements Handler {
+/**
+ * @author Yi Yang, 2021. email: s3798354@student.rmit.edu.au
+ */
 
-//    static final String TEMPLATE = Views.templatePath("/views/users/me.html");
-
+public class ShiftsShowController implements Handler {
     @Override
     public void handle(@NotNull Context ctx) throws Exception {
+        Long id = ctx.pathParam("id",Long.class).get();
         Map<String, Object> model = Views.baseModel(ctx);
-        System.out.println("these are all the shifts" + ShiftsDao.INSTANCE.getAll());
+        model.put("currentShift", ShiftsDao.INSTANCE.getByID(id));
+        ctx.render("/views/shifts/show.html",model);
 
-        model.put("shifts", ShiftsDao.INSTANCE.getAll());
-        ctx.render("/views/shifts/list1.html", model);
     }
-
-
 }
