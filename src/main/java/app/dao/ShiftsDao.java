@@ -16,6 +16,7 @@ public class ShiftsDao {
 //    private static String UPDATE = "UPDATE cinemas SET location = ?, tel = ?  WHERE id=?";
 //    private static String REMOVE_CINEMA = "DELETE FROM cinemas WHERE id=?";
     private static String SELECT_BY_ID = "SELECT * FROM shifts WHERE id=?";
+    private static String SELECT_BY_NAME = "SELECT * FROM shifts WHERE staff_name=?";
     private static String UPDATE = "UPDATE shifts SET title = ?, staff_name = ?, detail = ?, status = ?, created_time = ?, finish_time = ?, due_time = ? WHERE id=?";
 
     private ShiftsDao(){
@@ -57,13 +58,15 @@ public class ShiftsDao {
     }
 
     private Shift mapShift_ALL(ResultSet rs) throws SQLException {
-        Shift shift = new Shift(rs.getString(2),
+        Shift shift = new Shift(
+                rs.getString(2),
                 rs.getString(3),
                 rs.getString(4),
                 rs.getString(5),
                 rs.getString(6),
                 rs.getString(7),
-            rs.getString(8));
+                rs.getString(8)
+        );
         shift.setId(rs.getLong(1));
         return shift;
     }
@@ -79,6 +82,19 @@ public class ShiftsDao {
         }
         connection.close();
         throw new SQLException("No Session with id = " + id);
+    }
+
+    public Shift getByName(String name) throws SQLException {
+        Connection connection = DBUtils.getConnection();
+        PreparedStatement stm = connection.prepareStatement(SELECT_BY_NAME);
+        stm.setString(1, name);
+        ResultSet rs = stm.executeQuery();
+        if (rs.next()) {
+            Shift shift = mapShift_ALL(rs);
+            return shift;
+        }
+        connection.close();
+        throw new SQLException("No Session with name = " + name);
     }
 
     public int update(Shift shift) throws SQLException {

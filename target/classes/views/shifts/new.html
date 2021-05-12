@@ -3,7 +3,7 @@
 <head>
     <!-- Common head content is included from common.html  -->
     <th:block th:include="/views/fragments/common.html :: commonhead"></th:block>
-
+    <link href="/css/me.css" rel="stylesheet">
     <!-- Include custom head for this head after this line -->
     <title>Page Title</title>
 
@@ -14,10 +14,10 @@
 <body>
 
 <!-- Nav bar is located in common.html -->
-<header th:replace="/views/fragments/common.html :: header"></header>
+<header th:replace="/views/fragments/common_1.html :: header"></header>
 
 <!-- Begin THIS page content -->
-<main role="main" class="container ">
+<main role="main" class="container" style="border-radius: 10px 10px 10px 10px;">
     <h1>New Shift</h1>
 
     <form action="/shifts" method="post">

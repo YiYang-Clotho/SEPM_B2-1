@@ -5,6 +5,7 @@ import app.auth.LoginController;
 import app.controllers.shifts.*;
 import app.controllers.users.UsersEditController;
 import app.controllers.users.UsersMeController;
+import app.controllers.users.UsersShiftsController;
 import app.controllers.users.UsersUpdateController;
 import app.controllers.welcome.WelcomeController;
 import app.models.Role;
@@ -58,10 +59,11 @@ public class App {
         });
 
         //profile
-        app.get("/users/me", new UsersMeController(),roles(Role.REGISTERED,Role.ADMIN));
+
         app.get("/users/me/edit", new UsersEditController(),roles(Role.REGISTERED,Role.ADMIN));
         app.post("/users/me", new UsersUpdateController(),roles(Role.REGISTERED,Role.ADMIN));
-
+        app.get("/users/me", new UsersMeController(),roles(Role.REGISTERED,Role.ADMIN));
+        app.get("/users/shifts", new UsersShiftsController(),roles(Role.REGISTERED,Role.ADMIN));
 
         //shift
         app.get("/shifts", new ShiftsListController());

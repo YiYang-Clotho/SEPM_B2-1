@@ -3,7 +3,7 @@
 <head>
     <!-- Common head content is included from common.html  -->
     <th:block th:include="/views/fragments/common.html :: commonhead"></th:block>
-
+    <link href="/css/me.css" rel="stylesheet">
     <!-- Include custom head for this head after this line -->
     <title>Page Title</title>
 
@@ -14,11 +14,11 @@
 <body>
 
 <!-- Nav bar is located in common.html -->
-<header th:replace="/views/fragments/common.html :: header"></header>
+<header th:replace="/views/fragments/common_1.html :: header"></header>
 
 <!-- Begin THIS page content -->
 <main role="main" class="container ">
-    <h1>Profile Edit</h1>
+    <h1 th:text="${user.phone}">Profile Edit</h1>
 
     <form action="/users/me" method="post">
         <th:block th:include="/views/users/_form.html :: form"></th:block>

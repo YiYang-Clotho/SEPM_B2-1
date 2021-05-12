@@ -14,10 +14,10 @@
 <body>
 
 <!-- Nav bar is located in common.html -->
-<header th:replace="/views/fragments/common.html :: header"></header>
+<header th:replace="/views/fragments/common_1.html :: header"></header>
 
 <!-- Begin THIS page content -->
-<main role="main" class="container ">
+<main role="main" class="container" style="border-radius: 10px 10px 10px 10px; height:100%;">
     <h1>Restricted Page</h1>
     <h2>Current User information</h2>
     <p><b>id:</b> <span th:text="${user.id}"></span></p>
@@ -26,7 +26,9 @@
     <p><b>Phone:</b> <span th:text="${user.phone}"></span></p>
     <p><b>Role:</b> <span th:text="${user.role}"></span></p>
     <p><h2><b><a class="btn btn-success" th:href="@{/users/me/edit}" role="button">Edit profile</a></b></h2></p>
-
+    <br>
+    <br>
+    <br>
 </main>
 
 

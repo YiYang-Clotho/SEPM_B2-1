@@ -17,7 +17,7 @@ public class LoginController implements Handler {
         if (BCrypt.checkpw(pw, UserDao.INSTANCE.getUserPasswordHash(email))) {
             User user = UserDao.INSTANCE.getByEmail(email);
             AccessManager.loginUser(ctx,user);
-            ctx.redirect("/");
+            ctx.redirect("/users/me");
         }else {
             ctx.result("Login Failed");
         }

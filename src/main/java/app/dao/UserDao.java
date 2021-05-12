@@ -11,6 +11,7 @@ public class UserDao {
 
     private static final String SELECT_PWD_BY_EMAIL = "SELECT password FROM users WHERE email = ?";
     private static final String SELECT_BY_EMAIL = "SELECT email, name, role, id FROM users WHERE email = ?";
+    private static final String SELECT_BY_ID = "SELECT email, name, role, id FROM users WHERE id = ?";
     private static String SELECT_ALL = "SELECT * FROM users";
     public static UserDao INSTANCE = new UserDao();
     private static String UPDATE = "UPDATE users SET email = ?, name = ?,  phone = ? WHERE id=?";
@@ -45,6 +46,23 @@ public class UserDao {
         }
         connection.close();
         throw new SQLException("No User with email = " + email);
+    }
+
+    public User getById(Long id) throws SQLException {
+        Connection connection = DBUtils.getConnection();
+        PreparedStatement stm = connection.prepareStatement(SELECT_BY_ID);
+        stm.setLong(1, id);
+        ResultSet rs = stm.executeQuery();
+        if (rs.next()) {
+            User user = new User();
+            user.setEmail(rs.getString(1));
+            user.setName(rs.getString(2));
+            user.setRole(Role.valueOf(rs.getString(3)));
+            user.setId(rs.getLong(4));
+            return user;
+        }
+        connection.close();
+        throw new SQLException("No User with ID = " + id);
     }
 
     public List<User> getAll() throws SQLException {

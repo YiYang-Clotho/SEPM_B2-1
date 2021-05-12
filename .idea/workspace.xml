@@ -5,35 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ecb52f6-4a90-434a-9b66-c367270dc65d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsEditController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsShowController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsUpdateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/list1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersNotificationsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersShiftsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/fragments/common_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/users/notifications.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsNewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/shifts/ShiftsNewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/auth/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/auth/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersEditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersEditController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersUpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersUpdateController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/ShiftsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/ShiftsDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/me.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/css/me.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/auth/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/views/shifts/_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/views/shifts/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/shifts/list1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/list1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/shifts/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/views/users/_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/users/_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/views/users/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/users/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/shifts/ShiftsListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controllers/shifts/ShiftsListController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/shifts/ShiftsNewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controllers/shifts/ShiftsNewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/users/me.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/users/me.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/welcome/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/welcome/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/auth/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/auth/LoginController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersEditController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersEditController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersUpdateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersUpdateController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/app/dao/ShiftsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/dao/ShiftsDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/app/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/css/me.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/css/me.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/auth/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/views/shifts/_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/shifts/_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/views/shifts/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/shifts/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/shifts/list1.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/shifts/list1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/shifts/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/shifts/new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/views/users/_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/users/_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/views/users/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/users/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/users/me.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/users/me.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/welcome/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/welcome/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webapp.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp.mv.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webapp.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp.trace.db" afterDir="false" />
     </list>
@@ -45,8 +57,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -151,21 +163,21 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1620567604432">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1620805217604">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1620567604432" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1620567604432">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1620805217604" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1620805217603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1620567604432" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1620567604432">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1620805217603" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1620805217603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1620567604432" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1620567604432">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1620805217603" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1620805217604">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1620567604432" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1620805217604" />
   </component>
 </project>

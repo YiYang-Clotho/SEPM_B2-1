@@ -2,28 +2,29 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <body>
 <div th:fragment="form">
-    <input th:value="${shift.id}" type="hidden" name="id" >
+<!--    <input th:value="${shift.id}" type="hidden" name="id" >-->
 
     <div class="form-group">
 <!--        <label for="name"></label>-->
-        <input th:value="${user.id}" type="text" class="form-control" id="id"  name="id" placeholder="Enter the title" required>
+        <input th:value="${user.id}" type="number" class="form-control" id="id"  name="id" placeholder="Enter the title" required>
     </div>
 
     <div class="form-group">
-        <label for="name"></label>
+        <label for="name">Name</label>
         <input th:value="${user.name}" type="text" class="form-control" id="name"  name="name" placeholder="Enter the title" required>
     </div>
 
+
     <div class="form-group">
-        <label for="email"></label>
+        <label for="email">Email</label>
         <input th:value="${user.email}" type="text-local" class="form-control" id="email"  name="email" aria-describedby="locationHelp">
     </div>
 
     <div class="form-group">
-        <label for="phone"></label>
+        <label for="phone">Phone</label>
         <input th:value="${user.phone}" type="text-local" class="form-control" id="phone"  name="phone" aria-describedby="locationHelp">
     </div>
-
+    <p th:text="${user.phone}"></p>
     <button type="submit" class="btn btn-primary">Submit</button>
 </div>
 </body>

@@ -3,7 +3,8 @@
 <head>
     <!-- Common head content is included from common.html  -->
     <th:block th:include="/views/fragments/common.html :: commonhead"></th:block>
-
+    <link href="/css/welcome.css" rel="stylesheet">
+    <link href="/css/me.css" rel="stylesheet">
     <!-- Include custom head for this head after this line -->
     <title>Shifts List</title>
 
@@ -15,15 +16,15 @@
 <body>
 
 <!-- Nav bar is located in common.html -->
-<header th:replace="/views/fragments/common.html :: header"></header>
+<header th:replace="/views/fragments/common_1.html :: header"></header>
 
 <!-- Begin THIS page content -->
-<main role="main" class="container ">
+<main role="main" class="container " style="border-radius: 10px 10px 10px 10px;">
     <h1>Shift List Page
         <a class="btn btn-success" href="/shifts/new" role="button">Create a new shift</a></h1>
 
     <div>
-        <table style="width:100%">
+        <table style="width:100%; color:white;" >
             <tr>
                 <th>Shift title</th>
                 <th>Executor name</th>
@@ -47,6 +48,10 @@
 <!--                <a th:href="@{/shifts/{id}(id=${shift.id})}" class="btn btn-outline-info card-link">See More</a>-->
             </tr>
         </table>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
 <!--    <div class="card-columns">-->
 <!--                <div th:each="shift : ${shifts}" class="card">-->
