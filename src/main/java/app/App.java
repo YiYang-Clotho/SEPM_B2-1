@@ -3,10 +3,7 @@ package app;
 import app.auth.AccessManager;
 import app.auth.LoginController;
 import app.controllers.shifts.*;
-import app.controllers.users.UsersEditController;
-import app.controllers.users.UsersMeController;
-import app.controllers.users.UsersShiftsController;
-import app.controllers.users.UsersUpdateController;
+import app.controllers.users.*;
 import app.controllers.welcome.WelcomeController;
 import app.models.Role;
 import app.utils.Views;
@@ -64,6 +61,7 @@ public class App {
         app.post("/users/me", new UsersUpdateController(),roles(Role.REGISTERED,Role.ADMIN));
         app.get("/users/me", new UsersMeController(),roles(Role.REGISTERED,Role.ADMIN));
         app.get("/users/shifts", new UsersShiftsController(),roles(Role.REGISTERED,Role.ADMIN));
+        app.get("/users/notifications", new UsersNotificationsController(),roles(Role.REGISTERED,Role.ADMIN));
 
         //shift
         app.get("/shifts", new ShiftsListController());

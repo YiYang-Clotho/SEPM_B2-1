@@ -1,10 +1,154 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <!-- Common head content is included from common.html  -->
+    <th:block th:include="/views/fragments/common.html :: commonhead"></th:block>
+
+    <!-- Include custom head for this head after this line -->
+    <title>Page Title</title>
+
+    <!-- You can create a css with styles only for this page -->
+    <link href="/css/me.css" rel="stylesheet">
+
+
+    <style>
+    * {box-sizing: border-box}
+    body {font-family: "Lato", sans-serif;}
+
+    /* Style the tab */
+    .tab {
+      float: left;
+      border: 1px solid #ccc;
+      width: 60%;
+      height: 300px;
+      background: #191919;
+      opacity:0.75;
+      color:white;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      display: block;
+      background-color: inherit;
+      color: black;
+      padding: 22px 16px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    /* Create an active/current "tab button" class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      float: left;
+      padding: 0px 12px;
+      border: 1px solid #ccc;
+      width: 40%;
+      border-left: none;
+      height: 300px;
+      background: #191919;
+      opacity:0.75;
+      color:white;
+    }
+</style>
+
 </head>
+
 <body>
 
+<!-- Nav bar is located in common.html -->
+<header th:replace="/views/fragments/common_1.html :: header"></header>
+
+<!-- Begin THIS page content -->
+<main role="main" class="container" style="border-radius: 10px 10px 10px 10px; height:100%;">
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, '1')" style="color:white;opacity:1;"><b>System Notification:</b> <br>
+            Administrator has allocated a new shift to you. Please click to reveal details.</button>
+
+        <button class="tablinks" onclick="openCity(event, '2')" style="color:white;opacity:1;"><b>System Notification:</b> <br>
+            Administrator has allocated a new shift to you. Please click to reveal details.</button>
+<!--        <button class="tablinks" onclick="openCity(event, '3')" style="color:white;opacity:1;"><b>System Notification:</b> <br>-->
+<!--            Administrator has allocated a new shift to you. Please click to reveal details.</button>-->
+<!--        <button class="tablinks" onclick="openCity(event, '4')" style="color:white;opacity:1;"><b>System Notification:</b> <br>-->
+<!--            Administrator has allocated a new shift to you. Please click to reveal details.</button>-->
+    </div>
+
+    <div id="1" class="tabcontent">
+        <p>
+            <b>Title:</b><a th:text="${shift.title}"></a><br>
+            <b>Status:</b><a th:text="${shift.status}"></a><br>
+            <b>Created time:</b><a th:text="${shift.created_time}"></a><br>
+            <b>Finish time:</b><a th:text="${shift.finish_time}"></a><br>
+            <b>Due time:</b><a th:text="${shift.due_time}"></a>
+        </p>
+    </div>
+
+    <div id="2" class="tabcontent">
+        <p>
+            <b>Title:</b><a>test shift 4</a><br>
+            <b>Status:</b><a>to do</a><br>
+            <b>Created time:</b><a>Mon April 26 11:30:00 AEST 2021</a><br>
+            <b>Finish time:</b><a></a><br>
+            <b>Due time:</b><a>Tue April 27 13:00:00 AEST 2021</a>
+        </p>
+    </div>
+
+    <!--    <div id="2" class="tabcontent">-->
+<!--        <h3>London</h3>-->
+<!--        <p>London is the capital city of England.</p>-->
+<!--    </div>-->
+
+<!--    <div id="3" class="tabcontent">-->
+<!--        <h3>Paris</h3>-->
+<!--        <p>Paris is the capital of France.</p>-->
+<!--    </div>-->
+
+<!--    <div id="4" class="tabcontent">-->
+<!--        <h3>Tokyo</h3>-->
+<!--        <p>Tokyo is the capital of Japan.</p>-->
+<!--    </div>-->
+
+    <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</main>
+
+
+<!-- End THIS page content -->
+
+
+<!-- Footer is located in common.html -->
+<footer class="footer" th:replace="/views/fragments/common.html :: footer"> </footer>
+
+<!-- Bootstrap Scripts  -->
+<th:block th:include="/views/fragments/common.html :: scripts"></th:block>
 </body>
 </html>

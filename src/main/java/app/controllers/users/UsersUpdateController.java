@@ -28,7 +28,7 @@ public class UsersUpdateController implements Handler {
         user1.setEmail("123@123");
         user1.setName("user");
 
-        UserDao.INSTANCE.update(user1);
+//        UserDao.INSTANCE.update(user1);
         ctx.redirect("/users/me");
 
     }

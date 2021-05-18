@@ -14,7 +14,7 @@ public class UserDao {
     private static final String SELECT_BY_ID = "SELECT email, name, role, id FROM users WHERE id = ?";
     private static String SELECT_ALL = "SELECT * FROM users";
     public static UserDao INSTANCE = new UserDao();
-    private static String UPDATE = "UPDATE users SET email = ?, name = ?,  phone = ? WHERE id=?";
+    private static String UPDATE = "UPDATE users SET email = ?, name = ?,  phone = ? WHERE id = ?";
 
     private UserDao() {
     }
