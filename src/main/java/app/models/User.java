@@ -10,6 +10,7 @@ public class User {
     private String password = null;
     private String phone = null;
 
+
     public User(){
 
     }
@@ -82,9 +83,9 @@ public class User {
                 "id=" + id +
                 ", email='" + email + '\'' +
                 ", name='" + name + '\'' +
-                ", role=" + role + '\'' +
-                ", password=" + password + '\'' +
-                ", phone=" + phone + '\'' +
+                ", role='" + role + '\'' +
+                ", phone='" + phone + '\'' +
+                ", password=" + password +
                 '}';
     }
 }

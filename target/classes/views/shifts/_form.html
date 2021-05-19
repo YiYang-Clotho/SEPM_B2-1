@@ -5,13 +5,13 @@
     <input th:value="${shift.id}" type="hidden" name="id" >
 
     <div class="form-group">
-        <label for="title">Title</label>
-        <input th:value="${shift.title}" type="text" class="form-control" id="title"  name="title" placeholder="Enter the title" required>
+        <label type="text" for="title">Title</label>
+        <input th:value="${shift.title}" type="text" style="width: 70%" class="form-control" id="title"  name="title" placeholder="Enter the title" required>
     </div>
 
     <div class="form-group">
         <label for="staff_name">Choose staff</label>
-        <select id="staff_name" name="staff_name" lay-verify="required" class="form-control">
+        <select id="staff_name" name="staff_name" lay-verify="required" class="form-control" style="width: 70%">
             <option th:each="availableStaff : ${availableStaffs}" th:selected="${availableStaff.name eq staff_name}" th:value="${availableStaff.name}"
                     th:text="${availableStaff.name}">staff name
             </option>
@@ -20,28 +20,27 @@
 
     <div class="form-group">
         <label for="detail">Detail</label>
-        <input th:value="${shift.detail}" type="text" class="form-control" id="detail"  name="detail" placeholder="Enter the detail" required >
-        <small id="locationHelp" class="form-text text-muted">Please input the detail of the shift.</small>
+        <input th:value="${shift.detail}" type="text" class="form-control" id="detail" style="width: 70%" name="detail" placeholder="Enter the detail" required >
     </div>
 
     <div class="form-group">
         <label for="status">Status of the shift</label>
-        <input th:value="${shift.status}" type="text" class="form-control" id="status"  name="status">
+        <input th:value="${shift.status}" type="text" class="form-control" id="status" style="width: 70%" name="status">
     </div>
 
     <div class="form-group">
         <label for="created_time">Created time</label>
-        <input th:value="${shift.created_time}" type="datetime-local" class="form-control" id="created_time"  name="created_time" aria-describedby="locationHelp">
+        <input th:value="${shift.created_time}" type="datetime-local" class="form-control" style="width: 70%" id="created_time"  name="created_time" aria-describedby="locationHelp">
    </div>
 
     <div class="form-group">
         <label for="finish_time">Finished time</label>
-        <input th:value="${shift.finish_time}" type="datetime-local" class="form-control" id="finish_time"  name="finish_time" aria-describedby="locationHelp">
+        <input th:value="${shift.finish_time}" type="datetime-local" class="form-control" style="width: 70%" id="finish_time"  name="finish_time" aria-describedby="locationHelp">
     </div>
 
     <div class="form-group">
         <label for="due_time">Due time</label>
-        <input th:value="${shift.created_time}" type="datetime-local" class="form-control" id="due_time"  name="due_time" aria-describedby="locationHelp">
+        <input th:value="${shift.created_time}" type="datetime-local" class="form-control" style="width: 70%" id="due_time"  name="due_time" aria-describedby="locationHelp">
     </div>
 
     <button type="submit" class="btn btn-primary">Submit</button>

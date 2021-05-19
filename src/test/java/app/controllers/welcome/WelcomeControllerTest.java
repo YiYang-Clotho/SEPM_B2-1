@@ -10,11 +10,6 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-/**
- * Basic Integration test as example.
- *
- * @author Sebastian Rodriguez, 2020. email: sebastian.rodriguez@rmit.edu.au
- */
 class WelcomeControllerTest {
 
     private static final String URL = "http://localhost:1234/";

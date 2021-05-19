@@ -8,13 +8,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDao {
+    public static UserDao INSTANCE = new UserDao();
 
     private static final String SELECT_PWD_BY_EMAIL = "SELECT password FROM users WHERE email = ?";
     private static final String SELECT_BY_EMAIL = "SELECT email, name, role, id FROM users WHERE email = ?";
-    private static final String SELECT_BY_ID = "SELECT email, name, role, id FROM users WHERE id = ?";
+    private static final String SELECT_BY_ID = "SELECT id, email, name, role, phone, password FROM users WHERE id = ?";
     private static String SELECT_ALL = "SELECT * FROM users";
-    public static UserDao INSTANCE = new UserDao();
-    private static String UPDATE = "UPDATE users SET email = ?, name = ?,  phone = ? WHERE id = ?";
+    private static String UPDATE = "UPDATE users SET email = ?, name = ?, password = ?, phone = ? WHERE id = ?";
+
 
     private UserDao() {
     }
@@ -54,15 +55,13 @@ public class UserDao {
         stm.setLong(1, id);
         ResultSet rs = stm.executeQuery();
         if (rs.next()) {
-            User user = new User();
-            user.setEmail(rs.getString(1));
-            user.setName(rs.getString(2));
-            user.setRole(Role.valueOf(rs.getString(3)));
-            user.setId(rs.getLong(4));
+            User user = mapUser_ALL(rs);
             return user;
         }
+        System.out.println("get user by ID");
         connection.close();
         throw new SQLException("No User with ID = " + id);
+
     }
 
     public List<User> getAll() throws SQLException {
@@ -80,18 +79,19 @@ public class UserDao {
     public int update(User user) throws SQLException {
         Connection connection = DBUtils.getConnection();
         PreparedStatement stm = connection.prepareStatement(UPDATE);
-        stm.setString(1, user.getEmail());
-        stm.setString(2, user.getName());
-        stm.setString(3, user.getPhone());
-        stm.setLong(4, user.getId());
+        stm.setString(2, user.getEmail());
+        stm.setString(1, user.getName());
+        stm.setString(3, user.getPassword());
+        stm.setString(4, user.getPhone());
+        stm.setLong(5, user.getId());
         return stm.executeUpdate();
     }
 
     private User mapUser_ALL(ResultSet rs) throws SQLException {
         User user = new User(rs.getString(2),
                 rs.getString(3),
-                rs.getString(5),
-                rs.getString(6)
+                rs.getString(6),
+                rs.getString(5)
                 );
         user.setId(rs.getLong(1));
         user.setRole(Role.valueOf(rs.getString(4)));

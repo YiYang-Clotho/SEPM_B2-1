@@ -5,18 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ecb52f6-4a90-434a-9b66-c367270dc65d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/app/dao/UserDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersEditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersEditController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersNotificationsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersNotificationsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/auth/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/auth/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersMeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersMeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersUpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersUpdateController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/shifts/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/users/notifications.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/users/notifications.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersNotificationsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersNotificationsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/views/shifts/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/shifts/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/views/users/notifications.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/users/notifications.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__create_users_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__create_users_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2__insert_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__insert_users.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/me.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/css/me.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/fragments/common_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/fragments/common_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/shifts/_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/shifts/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/shifts/new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/users/_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/users/_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/users/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/users/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/users/me.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/users/me.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/app/controllers/welcome/WelcomeControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/app/controllers/welcome/WelcomeControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/auth/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/auth/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersMeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersMeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersUpdateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersUpdateController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V1__create_users_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V1__create_users_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V2__insert_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V2__insert_users.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/css/me.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/css/me.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/fragments/common_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/fragments/common_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/shifts/_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/shifts/_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/shifts/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/shifts/new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/users/_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/users/_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/users/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/users/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/users/me.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/users/me.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/app/controllers/welcome/WelcomeControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/app/controllers/welcome/WelcomeControllerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webapp.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp.mv.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webapp.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp.trace.db" afterDir="false" />
     </list>
@@ -30,6 +50,7 @@
       <list>
         <option value="Class" />
         <option value="HTML File" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -57,6 +78,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/app/controllers/shifts" />
   </component>
   <component name="RecentsManager">
@@ -64,16 +87,22 @@
       <recent name="C:\Users\Hx1920\Desktop\main\SEPM_B2-1\src\main\java\app\controllers\shifts" />
       <recent name="C:\Users\Hx1920\Desktop\main\SEPM_B2-1\src\main\resources\views\shifts" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="app.dao" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn flyway:history" />
-      <command value="mvn clean" />
       <command value="mvn flyway:repair" />
+      <command value="mvn clean" />
       <command value="mvn flyway:migrate" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="JUnit.WelcomeControllerTest.GET_welcome_renders">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.App" />
       <module name="shift-system" />
@@ -100,13 +129,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in shift-system" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shift-system" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WelcomeControllerTest.GET_welcome_renders" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shift-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.controllers.welcome.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="app.controllers.welcome" />
+      <option name="MAIN_CLASS_NAME" value="app.controllers.welcome.WelcomeControllerTest" />
+      <option name="METHOD_NAME" value="GET_welcome_renders" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.WelcomeControllerTest.GET_welcome_renders" />
+        <item itemvalue="JUnit.All in shift-system" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -131,23 +186,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1877" height="213" key="GridCell.Tab.0.bottom" timestamp="1621179394775">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1621179394775" />
-    <state width="1877" height="213" key="GridCell.Tab.0.center" timestamp="1621179394775">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="213" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1621179394775" />
-    <state width="1877" height="213" key="GridCell.Tab.0.left" timestamp="1621179394775">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="213" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1621179394775" />
-    <state width="1877" height="213" key="GridCell.Tab.0.right" timestamp="1621179394775">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="213" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1621179394775" />
   </component>
 </project>

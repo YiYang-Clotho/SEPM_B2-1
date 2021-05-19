@@ -4,27 +4,29 @@
 <div th:fragment="form">
 <!--    <input th:value="${shift.id}" type="hidden" name="id" >-->
 
-    <div class="form-group">
-<!--        <label for="name"></label>-->
-        <input th:value="${user.id}" type="number" class="form-control" id="id"  name="id" placeholder="Enter the title" required>
-    </div>
+    <input th:value="${user.id}" type="hidden" name="id" >
 
     <div class="form-group">
-        <label for="name">Name</label>
-        <input th:value="${user.name}" type="text" class="form-control" id="name"  name="name" placeholder="Enter the title" required>
+       <label for="name">Name</label>
+        <input th:value="${user.name}" type="text" style="width: 70%" class="form-control" id="name"  name="name" placeholder="Name" required>
     </div>
 
 
     <div class="form-group">
         <label for="email">Email</label>
-        <input th:value="${user.email}" type="text-local" class="form-control" id="email"  name="email" aria-describedby="locationHelp">
-    </div>
+         <input th:value="${user.email}" style="width: 70%" type="text-local" class="form-control" id="email"  name="email" placeholder="Enter the email">
+     </div>
 
-    <div class="form-group">
-        <label for="phone">Phone</label>
-        <input th:value="${user.phone}" type="text-local" class="form-control" id="phone"  name="phone" aria-describedby="locationHelp">
-    </div>
-    <p th:text="${user.phone}"></p>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</div>
-</body>
+     <div class="form-group">
+       <label for="password">Password</label>
+         <input th:value="${user.password}" style="width: 70%" type="password" class="form-control" id="password"  name="password" placeholder="Enter a new password">
+     </div>
+
+     <div class="form-group">
+         <label for="phone">Phone</label>
+         <input th:value="${user.phone}" style="width: 70%" type="text-local" class="form-control" id="phone"  name="phone" placeholder="Enter the phone number">
+     </div>
+
+     <button type="submit" class="btn btn-primary">Submit</button>
+ </div>
+ </body>

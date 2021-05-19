@@ -3,6 +3,7 @@ CREATE TABLE users(
     email VARCHAR(255) not null unique,
     name VARCHAR(255) not null,
     role VARCHAR(100) not null,
-    password VARCHAR(60) not null,
-    phone VARCHAR(255) not null
+    phone VARCHAR(255) not null,
+
+    password VARCHAR(60) not null
  );

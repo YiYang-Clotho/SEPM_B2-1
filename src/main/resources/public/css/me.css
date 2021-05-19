@@ -20,3 +20,25 @@ main{
     margin: 8% auto 0;
     text-align: center;
 }
+
+.form_box{
+    width: 70%;
+    padding: 20px;
+    left: 20%;
+    opacity:0.75;
+    box-shadow: 0 0 90px 0 rgba(0,0,0,0.3);
+    margin: 8% auto 0;
+    text-align: left;
+}
+
+label {
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+}
+
+input, selection{
+    vertical-align: top;
+    text-align: left;
+    align: right;
+}
