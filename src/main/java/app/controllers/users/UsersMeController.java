@@ -19,12 +19,7 @@ public class UsersMeController implements Handler {
         User user = ctx.sessionAttribute(USER_KEY);
         User user1 = UserDao.INSTANCE.getById(user.getId());
 
-        System.out.println("user1:" + UserDao.INSTANCE.getById(user.getId()));
-
-        System.out.println("users:" + UserDao.INSTANCE.getAll());
-
-        model.put("currentUser", UserDao.INSTANCE.getById(user.getId()));
-
+        model.put("currentUser", user1);
         ctx.render("/views/users/me.html", model);
     }
 }

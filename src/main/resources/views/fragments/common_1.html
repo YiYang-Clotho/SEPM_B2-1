@@ -25,7 +25,7 @@
     <div id="mySidenav">
         <a th:unless="${user_logged_in}" href="/login" style="top: 20px; background-color: #191919;"><h4>Login</h4></a>
         <a th:if="${user_logged_in}" href="/users/me" style="top: 20px; background-color: #191919;"><h4>Profile</h4></a>
-        <a th:if="${user_logged_in}" href="/users/shifts" style="top: 80px; background-color: #191919;"><h4>Shifts</h4></a>
+        <a th:if="${user_logged_in}" href="/shifts" style="top: 80px; background-color: #191919;"><h4>Shifts</h4></a>
         <a th:if="${user_logged_in}" href="#" style="top: 140px; background-color: #191919;"><h4>Availabilities</h4></a>
         <a th:if="${user_logged_in}" href="/users/notifications" style="top: 200px; background-color: #191919;"><h4>Notifications</h4></a>
         <a th:if="${user_logged_in}" href="/logout" style="top: 260px; background-color: #191919;"><h4>Logout</h4></a>

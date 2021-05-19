@@ -14,7 +14,7 @@ public class UserDao {
     private static final String SELECT_BY_EMAIL = "SELECT email, name, role, id FROM users WHERE email = ?";
     private static final String SELECT_BY_ID = "SELECT id, email, name, role, phone, password FROM users WHERE id = ?";
     private static String SELECT_ALL = "SELECT * FROM users";
-    private static String UPDATE = "UPDATE users SET email = ?, name = ?, password = ?, phone = ? WHERE id = ?";
+    private static String UPDATE = "UPDATE users SET name = ?, email = ?, password = ?, phone = ? WHERE id = ?";
 
 
     private UserDao() {
@@ -79,8 +79,8 @@ public class UserDao {
     public int update(User user) throws SQLException {
         Connection connection = DBUtils.getConnection();
         PreparedStatement stm = connection.prepareStatement(UPDATE);
-        stm.setString(2, user.getEmail());
         stm.setString(1, user.getName());
+        stm.setString(2, user.getEmail());
         stm.setString(3, user.getPassword());
         stm.setString(4, user.getPhone());
         stm.setLong(5, user.getId());

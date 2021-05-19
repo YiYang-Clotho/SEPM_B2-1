@@ -6,8 +6,6 @@ CREATE TABLE shifts(
     status VARCHAR(225) not null,
     created_time VARCHAR(255) not null,
     finish_time VARCHAR(255),
-    due_time VARCHAR(255) not null,
-
-    foreign key(staff_name) references users(name)
+    due_time VARCHAR(255) not null
  );
 

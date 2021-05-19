@@ -4,6 +4,5 @@ CREATE TABLE users(
     name VARCHAR(255) not null,
     role VARCHAR(100) not null,
     phone VARCHAR(255) not null,
-
     password VARCHAR(60) not null
  );
