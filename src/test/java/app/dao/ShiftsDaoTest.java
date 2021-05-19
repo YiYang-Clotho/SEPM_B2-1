@@ -1,5 +1,6 @@
 package app.dao;
 
+import app.models.Shift;
 import app.models.User;
 import org.flywaydb.core.Flyway;
 import org.junit.jupiter.api.BeforeEach;
@@ -9,7 +10,7 @@ import java.sql.SQLException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class UserDaoTest {
+class ShiftsDaoTest {
     @BeforeEach
     void setup(){
         //Use a different DB for testing
@@ -26,13 +27,13 @@ class UserDaoTest {
 
     @Test
     public void update() throws SQLException {
-        User user1 = UserDao.INSTANCE.getById((long)2);
-        assertNotNull(user1);
-        assertEquals("Administrator", user1.getName());
-        user1.setName("testName");
-        UserDao.INSTANCE.update(user1);
-        user1 = UserDao.INSTANCE.getById((long)2);
-        assertNotNull(user1);
-        assertEquals("testName", user1.getName());
+        Shift shift1 = ShiftsDao.INSTANCE.getByID((long) 1);
+        assertNotNull(shift1);
+        assertEquals("test shift 1", shift1.getTitle());
+        shift1.setTitle("change title");
+        ShiftsDao.INSTANCE.update(shift1);
+        shift1 = ShiftsDao.INSTANCE.getByID((long) 1);
+        assertNotNull(shift1);
+        assertEquals("change title", shift1.getTitle());
     }
 }

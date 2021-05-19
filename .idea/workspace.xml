@@ -5,31 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ecb52f6-4a90-434a-9b66-c367270dc65d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/app/dao/ShiftsDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersEditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersEditController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersMeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersMeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersUpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/users/UsersUpdateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__create_users_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__create_users_table.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2__insert_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__insert_users.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V3__create_shifts_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V3__create_shifts_table.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V4__insert_shifts.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V4__insert_shifts.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/fragments/common_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/fragments/common_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/users/_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/users/_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/users/me.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/users/me.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersEditController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersEditController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersMeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersMeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersUpdateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersUpdateController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V1__create_users_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V1__create_users_table.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V2__insert_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V2__insert_users.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V3__create_shifts_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V3__create_shifts_table.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V4__insert_shifts.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V4__insert_shifts.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/views/fragments/common_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/fragments/common_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/views/users/_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/users/_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/views/users/me.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/users/me.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/app/dao/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/app/dao/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/auth/AccessManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/auth/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/shifts/ShiftsCreateController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/shifts/ShiftsEditController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/shifts/ShiftsListController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/shifts/ShiftsNewController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/shifts/ShiftsShowController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/shifts/ShiftsUpdateController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersEditController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersMeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersNotificationsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersShiftsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/users/UsersUpdateController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/welcome/WelcomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/dao/DBMigrate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/dao/DBUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/dao/ShiftsDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/models/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/models/Shift.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/models/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/utils/PasswordGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/utils/StringArrayParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/utils/Views.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/css/welcome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/img/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/javascript/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/fragments/common.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/fragments/common_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/fragments/pagetemplate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/welcome/Register 2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/welcome/Register.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +105,7 @@
       <command value="mvn flyway:migrate" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="JUnit.ShiftsDaoTest.update">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.App" />
       <module name="shift-system" />
@@ -128,6 +140,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShiftsDaoTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shift-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="app.dao" />
+      <option name="MAIN_CLASS_NAME" value="app.dao.ShiftsDaoTest" />
+      <option name="METHOD_NAME" value="update" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shift-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="app.dao" />
+      <option name="MAIN_CLASS_NAME" value="app.dao.UserDaoTest" />
+      <option name="METHOD_NAME" value="update" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WelcomeControllerTest.GET_welcome_renders" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shift-system" />
       <extension name="coverage">
@@ -146,6 +190,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShiftsDaoTest.update" />
+        <item itemvalue="JUnit.UserDaoTest.update" />
         <item itemvalue="Application.App" />
         <item itemvalue="JUnit.WelcomeControllerTest.GET_welcome_renders" />
         <item itemvalue="JUnit.All in shift-system" />
