@@ -73,53 +73,73 @@
 <header th:replace="/views/fragments/common_1.html :: header"></header>
 
 <!-- Begin THIS page content -->
-<main role="main" class="container" style="border-radius: 10px 10px 10px 10px; height:100%;">
+<main role="main" class="container" style="border-radius: 10px 10px 10px 10px; height:100%; color:black; background:white;">
     <div class="tab">
-        <button class="tablinks" onclick="openCity(event, '1')" style="color:white;opacity:1;"><b>System Notification:</b> <br>
+<!--        <button class="tablinks" onclick="openCity(event, '1')" style="color:black; background:white;"><b>System Notification:</b> <br>-->
+<!--            Administrator has allocated a new shift to you. Please click to reveal details.</button>-->
+
+<!--        <button class="tablinks" onclick="openCity(event, '2')" style="color:black; background:white;"><b>System Notification:</b> <br>-->
+<!--            Administrator has allocated a new shift to you. Please click to reveal details.</button>-->
+        <button class="tablinks" onclick="openCity(event, '3')" style="color:black; background:white;"><b>System Notification:</b> <br>
             Administrator has allocated a new shift to you. Please click to reveal details.</button>
 
-        <button class="tablinks" onclick="openCity(event, '2')" style="color:white;opacity:1;"><b>System Notification:</b> <br>
+        <button class="tablinks" onclick="openCity(event, '4')" style="color:black; background:white;"><b>System Notification:</b> <br>
             Administrator has allocated a new shift to you. Please click to reveal details.</button>
-<!--        <button class="tablinks" onclick="openCity(event, '3')" style="color:white;opacity:1;"><b>System Notification:</b> <br>-->
-<!--            Administrator has allocated a new shift to you. Please click to reveal details.</button>-->
-<!--        <button class="tablinks" onclick="openCity(event, '4')" style="color:white;opacity:1;"><b>System Notification:</b> <br>-->
-<!--            Administrator has allocated a new shift to you. Please click to reveal details.</button>-->
     </div>
 
-    <div id="1" class="tabcontent">
-        <p>
-            <b>Title:</b><a th:text="${shift.title}"></a><br>
-            <b>Status:</b><a th:text="${shift.status}"></a><br>
-            <b>Created time:</b><a th:text="${shift.created_time}"></a><br>
-            <b>Finish time:</b><a th:text="${shift.finish_time}"></a><br>
-            <b>Due time:</b><a th:text="${shift.due_time}"></a>
-        </p>
-    </div>
+<!--    <div id="1" class="tabcontent">-->
+<!--        <p>-->
+<!--            <b>Title:</b><a th:text="${shift.title}"></a><br>-->
+<!--            <b>Status:</b><a th:text="${shift.status}"></a><br>-->
+<!--            <b>Created time:</b><a th:text="${shift.created_time}"></a><br>-->
+<!--            <b>Finish time:</b><a th:text="${shift.finish_time}"></a><br>-->
+<!--            <b>Due time:</b><a th:text="${shift.due_time}"></a>-->
+<!--        </p>-->
+<!--    </div>-->
+<!--    <div id="1" class="tabcontent" style="color:black; background:white;">-->
+<!--        <p>-->
+<!--            <b>Title:</b><a>test shift 4</a><br>-->
+<!--            <b>Status:</b><a>to do</a><br>-->
+<!--            <b>Created time:</b><a>Mon April 26 11:30:00 AEST 2021</a><br>-->
+<!--            <b>Finish time:</b><a></a><br>-->
+<!--            <b>Due time:</b><a>Tue April 27 13:00:00 AEST 2021</a>-->
+<!--        </p>-->
+<!--    </div>-->
 
-    <div id="2" class="tabcontent">
-        <p>
-            <b>Title:</b><a>test shift 4</a><br>
-            <b>Status:</b><a>to do</a><br>
-            <b>Created time:</b><a>Mon April 26 11:30:00 AEST 2021</a><br>
-            <b>Finish time:</b><a></a><br>
-            <b>Due time:</b><a>Tue April 27 13:00:00 AEST 2021</a>
-        </p>
-    </div>
+<!--    <div id="2" class="tabcontent" style="color:black; background:white;">-->
+<!--        <p>-->
+<!--            <b>Title:</b><a>test shift 4</a><br>-->
+<!--            <b>Status:</b><a>to do</a><br>-->
+<!--            <b>Created time:</b><a>Mon April 26 11:30:00 AEST 2021</a><br>-->
+<!--            <b>Finish time:</b><a></a><br>-->
+<!--            <b>Due time:</b><a>Tue April 27 13:00:00 AEST 2021</a>-->
+<!--        </p>-->
+<!--    </div>-->
 
     <!--    <div id="2" class="tabcontent">-->
 <!--        <h3>London</h3>-->
 <!--        <p>London is the capital city of England.</p>-->
 <!--    </div>-->
 
-<!--    <div id="3" class="tabcontent">-->
-<!--        <h3>Paris</h3>-->
-<!--        <p>Paris is the capital of France.</p>-->
-<!--    </div>-->
+    <div id="3" class="tabcontent" style="color:black; background:white;">
+                    <p>
+                        <b>Title:</b><a>test shift 4</a><br>
+                        <b>Status:</b><a>to do</a><br>
+                        <b>Created time:</b><a>Mon April 26 11:30:00 AEST 2021</a><br>
+                        <b>Finish time:</b><a></a><br>
+                        <b>Due time:</b><a>Tue April 27 13:00:00 AEST 2021</a>
+                    </p>
+    </div>
 
-<!--    <div id="4" class="tabcontent">-->
-<!--        <h3>Tokyo</h3>-->
-<!--        <p>Tokyo is the capital of Japan.</p>-->
-<!--    </div>-->
+    <div id="4" class="tabcontent" style="color:black; background:white;">
+                <p>
+                    <b>Title:</b><a>test shift 4</a><br>
+                    <b>Status:</b><a>to do</a><br>
+                    <b>Created time:</b><a>Mon April 26 11:30:00 AEST 2021</a><br>
+                    <b>Finish :</b><a></a><br>
+                    <b>Due time:</b><a>Tue April 27 13:00:00 AEST 2021</a>
+                </p>
+    </div>
 
     <script>
 function openCity(evt, cityName) {

@@ -17,10 +17,10 @@
 <header th:replace="/views/fragments/common_1.html :: header"></header>
 
 <!-- Begin THIS page content -->
-<main role="main" class="container ">
+<main role="main" class="container " style="border-radius: 10px 10px 10px 10px;">
     <h1 >Profile Edit</h1>
 
-    <form class="form_box" action="/users/me" method="post">
+    <form action="/users/me" method="post"  style="padding:30px;">
         <th:block th:include="/views/users/_form.html :: form"></th:block>
     </form>
 </main>

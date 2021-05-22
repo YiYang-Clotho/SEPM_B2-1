@@ -101,10 +101,10 @@ main {
   width: 150px; /* Set a specific width */
   text-decoration: none; /* Remove underline */
   font-size: 5px; /* Increase font size */
-  color: white; /* White text color */
+  color: black; /* White text color */
   border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
   text-align: center;
-  background: #228B22;
+  background: white;
   opacity:0.75;
 
   }

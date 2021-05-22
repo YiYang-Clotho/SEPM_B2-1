@@ -15,7 +15,7 @@ public class UsersShiftsController implements Handler {
         Map<String, Object> model = Views.baseModel(ctx);
         System.out.println("these are all the shifts" + ShiftsDao.INSTANCE.getByName("Customer"));
 
-        model.put("shifts", ShiftsDao.INSTANCE.getByName("Customer"));
+        model.put("shifts", ShiftsDao.INSTANCE.getAll());
         ctx.render("/views/shifts/list1.html", model);
     }
 }

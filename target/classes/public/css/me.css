@@ -13,10 +13,9 @@ main{
     top: 0;
     bottom: 0;
     left: 50%;
-    background: #191919;
-    opacity:0.75;
-    color:white;
-    box-shadow: 0 0 90px 0 rgba(0,0,0,0.3);
+    background: white;
+    opacity:1;
+    color:black;
     margin: 8% auto 0;
     text-align: center;
 }

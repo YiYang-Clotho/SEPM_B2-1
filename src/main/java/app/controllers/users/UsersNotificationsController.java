@@ -12,9 +12,9 @@ public class UsersNotificationsController implements Handler {
     @Override
     public void handle(@NotNull Context ctx) throws Exception {
         Map<String, Object> model = Views.baseModel(ctx);
-        System.out.println("these are all the shifts" + ShiftsDao.INSTANCE.getByName("Customer"));
-
-        model.put("shift", ShiftsDao.INSTANCE.getByName("Customer"));
+//        System.out.println("these are all the shifts" + ShiftsDao.INSTANCE.getByName("Customer"));
+//
+//        model.put("shift", ShiftsDao.INSTANCE.getByName("Customer"));
         ctx.render("/views/users/notifications.html", model);
     }
 }
